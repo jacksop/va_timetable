@@ -1,0 +1,1164 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html id="html" lang="en" class="ie ie6 nojs"> <![endif]-->
+<!--[if IE 7 ]>    <html id="html" lang="en" class="ie ie7 nojs"> <![endif]-->
+<!--[if IE 8 ]>    <html id="html" lang="en" class="ie ie8 nojs"> <![endif]-->
+<!--[if IE 9 ]>    <html id="html" lang="en" class="ie ie9 nojs"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html id="html" lang="en" class="nojs"> <!--<![endif]-->
+<head id="HTMLHead"><title>
+	200 Aldersgate Gym Classes | Virgin Active
+</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9,chrome=1" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"beacon-6.newrelic.com","errorBeacon":"jserror.newrelic.com","licenseKey":"04db06e659","applicationID":"2153334","transactionName":"M1MDYBZQV0IDAUNaWgoZIGc0HlVQGw1CR0ZLQAhGA1hXUAEWXkVQS1sIVxZeSlgWBxheXAdEDkcNRVxdAxtYRkFKVxJEHA==","queueTime":46,"applicationTime":712,"ttGuid":"107C154C1F653B34","agent":"js-agent.newrelic.com/nr-397.min.js"}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VgMFWVdWGwEBUVJRBAU="};window.NREUM||(NREUM={}),__nr_require=function t(e,n,r){function o(i){if(!n[i]){var a=n[i]={exports:{}};e[i][0].call(a.exports,function(t){var n=e[i][1][t];return o(n?n:t)},a,a.exports,t,e,n,r)}return n[i].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<r.length;i++)o(r[i]);return o}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,o,a,u){return s?s-=1:n("err",[u||new UncaughtException(t,e,o)]),"function"==typeof i?i.apply(this,r(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}var n=t("handle"),r=t(6),o=t(5),i=window.onerror,a=!1,s=0;t("loader").features.push("err"),window.onerror=e;try{throw new Error}catch(u){"stack"in u&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),a=!0)}o.on("fn-start",function(){a&&(s+=1)}),o.on("fn-err",function(t,e,r){a&&(this.thrown=!0,n("err",[r,(new Date).getTime()]))}),o.on("fn-end",function(){a&&!this.thrown&&s>0&&(s-=1)}),o.on("internal-error",function(t){n("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);return i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1),n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,p=e(d);if(p&&(r.rxSize=p),this.sameOrigin){var f=t.getResponseHeader("X-NewRelic-App-Data");f&&(n.cat=f.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var d=e(o);d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){a.emit("internal-error",e)}};for(var p=0;u>p;p++)n.addEventListener(s[p],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=c.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID){c.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=c.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",p="attachEvent",f=(""+location).split("?")[0],c=e.exports={offset:i(),origin:f,features:[]};u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[p]("onreadystatechange",r),s[p]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,n,r){function nrWrapper(){try{var a,u=s(arguments),d=this,p=n&&n(u,d)||{}}catch(f){i([f,"",[u,d,r],p])}o(e+"start",[u,d,r],p);try{return a=t.apply(d,u)}catch(c){throw o(e+"err",[u,d,c],p),c}finally{o(e+"end",[u,d,a],p)}}return t&&"function"==typeof t&&t.apply&&!t._wrapped?(e||(e=""),nrWrapper._wrapped=!0,nrWrapper):t}function r(t,e,r,o){r||(r="");var i,a,s,u="-"===r.charAt(0);for(s=0;s<e.length;s++)a=e[s],i=t[a],i&&"function"==typeof i&&i.apply&&!i._wrapped&&(t[a]=n(i,u?a+r:r,o,a,t))}function o(t,e,n){try{a.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{a.emit("internal-error",t)}catch(e){}}var a=t(1),s=t(2);e.exports=n,n.inPlace=r},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script> 
+    <script>
+        document.getElementById("html").className = document.getElementById("html").className.replace(/(?:^|\s)nojs(?!\S)/, "");
+    </script>
+    <script src='/assets/scripts/modernizr_custom.js'></script>
+    
+    <meta name="viewport" content="width=1020" /><link href="/assets/styles/fonts.css" rel="stylesheet" type="text/css" media="screen" /><link rel="apple-touch-icon" href="/assets/images/microsites/apple-touch-icon.png" /><link rel="shortcut icon" href="/assets/images/microsites/favicon.ico" /><link href="/assets/styles/microsites/microsite.css" rel="stylesheet" type="text/css" media="screen" /><link href="/assets/styles/microsites/microsite_print.css" rel="stylesheet" type="text/css" media="print" />
+     <script src='http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places&amp;region=GB&amp;language=en-GB&amp;radius=100&key=AIzaSyB2h8ZLLw1YofO-G9xT5eGPv3W5tRiwdDY'></script>
+
+    <link rel="stylesheet" href="/assets/styles/mainsite/cookies.css" />
+    
+    <script>
+        function addLoadEvent(func) {
+            var oldonload = window.onload;
+            if (typeof window.onload != 'function') {
+                window.onload = func;
+            } else {
+                window.onload = function () {
+                    if (oldonload) {
+                        oldonload();
+                    }
+                    func();
+                }
+            }
+        }
+    </script>
+<link rel="canonical" href="http://www.virginactive.co.uk/microsites/aldersgate/timetable/class-timetable" /><meta name="description" content="Make sure you never miss a class at 200 Aldersgate with our online class timetable. We offer a wide variety of classes from Antigravity Yoga & Body Pump to Zumba." /><meta name="pid" content="{0491F51E-2BDF-4BFB-BF58-033519B810BB}" /><script src='//d3c3cq33003psk.cloudfront.net/opentag-32825-50177.js' async defer></script></head>
+<body id="BodyTag" class="cookie-show">
+    <form method="post" action="/microsites/aldersgate/timetable" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTIxMDA0OTc1OQ8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgICAw8WAh4FY2xhc3MFC2Nvb2tpZS1zaG93FgICARBkZBYCAgMPZBYCZg9kFgJmD2QWBgIBD2QWAmYPZBYCZg8UKwACDxYEHgtfIURhdGFCb3VuZGceC18hSXRlbUNvdW50AgZkZBYCZg9kFgwCAQ9kFgICAQ8WAh4EaHJlZgUzaHR0cDovL3d3dy52aXJnaW5hY3RpdmUuY28udWsvbWljcm9zaXRlcy9hbGRlcnNnYXRlFgJmDxUBBEhPTUVkAgIPZBYCAgEPFgIfBAUhL21pY3Jvc2l0ZXMvYWxkZXJzZ2F0ZS9tZW1iZXJzaGlwFgJmDxUBCk1FTUJFUlNISVBkAgMPZBYCAgEPFgIfBAUgL21pY3Jvc2l0ZXMvYWxkZXJzZ2F0ZS93aGF0cy1uZXcWAmYPFQEOV0hBVCYjMzk7UyBORVdkAgQPZBYCAgEPFgIfBAUfL21pY3Jvc2l0ZXMvYWxkZXJzZ2F0ZS9sb2NhdGlvbhYCZg8VAQhMT0NBVElPTmQCBQ9kFgICAQ8WBB8EBSAvbWljcm9zaXRlcy9hbGRlcnNnYXRlL3RpbWV0YWJsZR8BBQZhY3RpdmUWAmYPFQEJVElNRVRBQkxFZAIGD2QWAgIBDxYCHwQFIS9taWNyb3NpdGVzL2FsZGVyc2dhdGUvaW50ZXJlc3RlZBYCZg8VAQtJTlRFUkVTVEVEP2QCAw9kFgJmD2QWAmYPZBYGZg8UKwACZGRkAgMPZBYCZg9kFgJmDxYCHwMCBxYOZg9kFgRmDxUDDXRpbWV0YWJsZV90dWUDVFVFAjA2ZAIBDxYCHwMCExYmZg9kFghmDxUDBTA3OjAwBTA3OjQ1CUJvZHkgUHVtcGQCAQ8WAh4EVGV4dAWfAzxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+Qk9EWVBVTVDCriBpcyB0aGUgdWx0aW1hdGUgZW5kdXJhbmNlIHdlaWdodCB0cmFpbmluZyB3b3Jrb3V0IHRvIHRvbmluZyBldmVyeSBtYWpvciBtdXNjbGUgZ3JvdXAgaW4geW91ciBib2R5LiBTdWl0YWJsZSBmb3IgbWVuIGFuZCB3b21lbiBvZiBhbGwgbGV2ZWxzIG9mIGZpdG5lc3MsIHRoaXMgbm9uLWltcGFjdCByZXNpc3RhbmNlIHRyYWluaW5nIGNsYXNzIHVzZXMgYmFyYmVsbHMgYW5kIGVhc2lseSBhZGp1c3RhYmxlIHdlaWdodHMuPC9zcGFuPjwvYT5kAgIPFQIDT25lB0FudG9pbmVkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIBD2QWCGYPFQMFMDc6MDAFMDc6NDULR3JvdXAgQ3ljbGVkAgEPFgIfBQWUAjxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+VGhpcyBmcmVlc3R5bGUgaW5kb29yIGN5Y2xpbmcgY2xhc3Mgd2lsbCBzdHJlbmd0aGVuIHRoZSBoZWFydCBhbmQgYnVybiBmYXQgdXNpbmcgc3BlY2lhbGlzZWQgc3RhdGlvbmFyeSBiaWtlcy48L3NwYW4+PC9hPmQCAg8VAgVDeWNsZQRLYXogZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCAg9kFghmDxUDBTA3OjQ1BTA4OjE1B0NYIFdPUlhkAgEPFgIfBQXIAjxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+QSBjbGFzcyB0aGF0IGZvY3VzZXMgb24geW91ciB0b3Jzby4gSXTigJlzIGlkZWFsIGZvciB0aWdodGVuaW5nIHlvdXIgdHVtbXkgYW5kIGJ1dHQsIHdoaWxlIGFsc28gaW1wcm92aW5nIGZ1bmN0aW9uYWwgc3RyZW5ndGggYW5kIGFzc2lzdGluZyBpbiBpbmp1cnkgcHJldmVudGlvbi4gPC9zcGFuPjwvYT5kAgIPFQIDT25lB0FudG9pbmVkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIDD2QWCGYPFQMFMTI6MDAFMTI6MzAMVHdlbnR5IEZvdXIgZAIBDxYCHwUF5QE8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPlR3ZW50eSBmb3VyIG1pbnV0ZXMgb2YgaGlnaCBpbnRlbnNpdHkgdHJhaW5pbmcgZm9yIGV2ZXJ5IGJvZHkuIDwvc3Bhbj48L2E+ZAICDxUCA09uZQdBbmR5IFcgZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCBA9kFghmDxUDBTEyOjE1BTEzOjAwC0dyb3VwIEN5Y2xlZAIBDxYCHwUFlAI8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPlRoaXMgZnJlZXN0eWxlIGluZG9vciBjeWNsaW5nIGNsYXNzIHdpbGwgc3RyZW5ndGhlbiB0aGUgaGVhcnQgYW5kIGJ1cm4gZmF0IHVzaW5nIHNwZWNpYWxpc2VkIHN0YXRpb25hcnkgYmlrZXMuPC9zcGFuPjwvYT5kAgIPFQIFQ3ljbGUEQW15IGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgUPZBYIZg8VAwUxMjozMAUxMzoxNQtCb2R5IEF0dGFja2QCAQ8WAh8FBcoCPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5CT0RZQVRUQUNLwq4gaXMgYSByb2NrZXQtZnVlbGxlZCBjb21iaW5hdGlvbiBvZiBtdXNpYyBhbmQgbW92ZXMuIFNpbXBsZSB5ZXQgZWZmZWN0aXZlIGNob3Jlb2dyYXBoeSBlbnN1cmVzIHRoYXQgcGFydGljaXBhbnRzIGVpdGhlciBnZXQgZml0LCBzdGF5IGZpdCBvciBnZXQgZml0dGVyLjwvc3Bhbj48L2E+ZAICDxUCA09uZQZEZW5pY2VkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIGD2QWCGYPFQMFMTI6NDAFMTM6MDALS2V0dGxlYmVsbHNkAgEPFgIfBQWnATxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+LTwvc3Bhbj48L2E+ZAICDxUCCUd5bSBGbG9vcg5GaXRuZXNzIGNvYWNoIGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgcPZBYIZg8VAwUxMzowNQUxMzoyMAZWIENvcmVkAgEPFgIfBQWFAjxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+RWZmZWN0aXZlIGV4ZXJjaXNlcyB0byBmbGF0dGVuLCB0b25lLCBsZW5ndGhlbiBhbmQgc3RyZW5ndGhlbiEgQWJzIG9mIHN0ZWVsLCBhcmUgeW91IHVwIGZvciBpdD88L3NwYW4+PC9hPmQCAg8VAgpHeW0gRmxvb3IgDkZpdG5lc3MgQ29hY2ggZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCCA9kFghmDxUDBTEzOjA1BTEzOjUwC1p1bWJhIFN0ZXAgZAIBDxYCHwUFsQE8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPlp1bWJhIFN0ZXAgPC9zcGFuPjwvYT5kAgIPFQIEVHdvIARBbXkgZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCCQ9kFghmDxUDBTEzOjIwBTE0OjAwCUJvZHkgUHVtcGQCAQ8WAh8FBZ8DPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5CT0RZUFVNUMKuIGlzIHRoZSB1bHRpbWF0ZSBlbmR1cmFuY2Ugd2VpZ2h0IHRyYWluaW5nIHdvcmtvdXQgdG8gdG9uaW5nIGV2ZXJ5IG1ham9yIG11c2NsZSBncm91cCBpbiB5b3VyIGJvZHkuIFN1aXRhYmxlIGZvciBtZW4gYW5kIHdvbWVuIG9mIGFsbCBsZXZlbHMgb2YgZml0bmVzcywgdGhpcyBub24taW1wYWN0IHJlc2lzdGFuY2UgdHJhaW5pbmcgY2xhc3MgdXNlcyBiYXJiZWxscyBhbmQgZWFzaWx5IGFkanVzdGFibGUgd2VpZ2h0cy48L3NwYW4+PC9hPmQCAg8VAgNPbmUGRGVuaWNlZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCCg9kFghmDxUDBTE0OjE1BTE1OjAwEUFudGkgR3Jhdml0eSBZb2dhZAIBDxYCHwUFpwM8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPkEgdW5pcXVlIGZ1c2lvbiB0ZWNobmlxdWUsIHJldm9sdXRpb25hcnkgaW4gcmVsaWV2aW5nIGNvbXByZXNzZWQgam9pbnRzIGFuZCBhbGlnbmluZyB0aGUgYm9keSBmcm9tIGhlYWQgdG8gdG9lLiBUaGUgQW50aUdyYXZpdHnCriBIYW1tb2NrIGFjdHMgYXMgYSBzb2Z0IHRyYXBlemUgYW5kIGFzIGEgc3VwcG9ydCB3aGlsZSB5b3UgbWFzdGVyIHNpbXBsZSBpbnZlcnNpb25zIGFuZCBmaW5hbGx5IHByb2dyZXNzIHRvIG1vcmUgYWR2YW5jZWQgcG9zZXMuPC9zcGFuPjwvYT5kAgIPFQIDVHdvB0VzdGhlciBkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAILD2QWCGYPFQMFMTc6NDUFMTg6MzARQW50aSBHcmF2aXR5IFlvZ2FkAgEPFgIfBQWnAzxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+QSB1bmlxdWUgZnVzaW9uIHRlY2huaXF1ZSwgcmV2b2x1dGlvbmFyeSBpbiByZWxpZXZpbmcgY29tcHJlc3NlZCBqb2ludHMgYW5kIGFsaWduaW5nIHRoZSBib2R5IGZyb20gaGVhZCB0byB0b2UuIFRoZSBBbnRpR3Jhdml0ecKuIEhhbW1vY2sgYWN0cyBhcyBhIHNvZnQgdHJhcGV6ZSBhbmQgYXMgYSBzdXBwb3J0IHdoaWxlIHlvdSBtYXN0ZXIgc2ltcGxlIGludmVyc2lvbnMgYW5kIGZpbmFsbHkgcHJvZ3Jlc3MgdG8gbW9yZSBhZHZhbmNlZCBwb3Nlcy48L3NwYW4+PC9hPmQCAg8VAgNUd28GSGVsZW4gZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCDA9kFghmDxUDBTE3OjQ1BTE4OjMwC0JvZHkgQ29tYmF0ZAIBDxYCHwUFogM8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPkEgbm9uLWNvbnRhY3QgbWFydGlhbCBhcnRzIGZpdG5lc3Mgd29ya291dCB1c2luZyBraWNrcywgc3RyaWtlcywgYW5kIGJsb2NrcyBjaG9yZW9ncmFwaGVkIHRvIGluc3BpcmluZyBtdXNpYy4gUmVjb21tZW5kZWQgZm9yIGFueSBhZ2UgYW5kIGZpdG5lc3MgbGV2ZWwsIEJPRFlDT01CQVTCriBpcyBhbiBlbXBvd2VyaW5nIGF0aGxldGljIHdvcmtvdXQgdGhhdCB3aWxsIGhhdmUgYW55b25lIOKAmGZpZ2h0aW5nIGZpdOKAmSBpbiBubyB0aW1lLjwvc3Bhbj48L2E+ZAICDxUCA09uZQdNYWxjb20gZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCDQ9kFghmDxUDBTE4OjE1BTE5OjAwC0dyb3VwIEN5Y2xlZAIBDxYCHwUFlAI8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPlRoaXMgZnJlZXN0eWxlIGluZG9vciBjeWNsaW5nIGNsYXNzIHdpbGwgc3RyZW5ndGhlbiB0aGUgaGVhcnQgYW5kIGJ1cm4gZmF0IHVzaW5nIHNwZWNpYWxpc2VkIHN0YXRpb25hcnkgYmlrZXMuPC9zcGFuPjwvYT5kAgIPFQIGQ3ljbGUgBlNhbmR5IGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAg4PZBYIZg8VAwUxODozNQUxOTozNQlCb2R5IFB1bXBkAgEPFgIfBQWfAzxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+Qk9EWVBVTVDCriBpcyB0aGUgdWx0aW1hdGUgZW5kdXJhbmNlIHdlaWdodCB0cmFpbmluZyB3b3Jrb3V0IHRvIHRvbmluZyBldmVyeSBtYWpvciBtdXNjbGUgZ3JvdXAgaW4geW91ciBib2R5LiBTdWl0YWJsZSBmb3IgbWVuIGFuZCB3b21lbiBvZiBhbGwgbGV2ZWxzIG9mIGZpdG5lc3MsIHRoaXMgbm9uLWltcGFjdCByZXNpc3RhbmNlIHRyYWluaW5nIGNsYXNzIHVzZXMgYmFyYmVsbHMgYW5kIGVhc2lseSBhZGp1c3RhYmxlIHdlaWdodHMuPC9zcGFuPjwvYT5kAgIPFQIDT25lB05hdGFsaWFkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIPD2QWCGYPFQMFMTg6NDUFMTk6MzAMQm9keSBCYWxhbmNlZAIBDxYCHwUFqQI8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPkJPRFlCQUxBTkNFwq4gY29tYmluZXMgWW9nYSwgUGlsYXRlcywgYW5kIFRhaSBDaGkgaW5zcGlyZWQgbW92ZXMgd2l0aCBtdXNpYyB0byBjcmVhdGUgYSB1bmlxdWUgYW5kIGludmlnb3JhdGluZyB3b3Jrb3V0IGV4cGVyaWVuY2UuPC9zcGFuPjwvYT5kAgIPFQIEVHdvIAdEZW5pY2UgZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCEA9kFghmDxUDBTE5OjAwBTE5OjIwB0NpcmN1aXRkAgEPFgIfBQWNAzxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+QSBjcm9zcy10cmFpbmluZyBjbGFzcyB0aGF0IGlzIGlkZWFsIGZvciBkZXZlbG9waW5nIGFsbC1yb3VuZCBmaXRuZXNzLiBTdHJhaWdodGZvcndhcmQgYWVyb2JpYyBhbmQgcmVzaXN0YW5jZSBleGVyY2lzZXMgYXJlIHBlcmZvcm1lZCBhdCBhIHNlcmllcyBvZiB3b3Jrc3RhdGlvbnMsIGNyZWF0aW5nIGEgZnVuIGFuZCBjaGFsbGVuZ2luZyB3b3Jrb3V0IHRoYXQgaXMgZGlmZmVyZW50IGV2ZXJ5IHRpbWUuPC9zcGFuPjwvYT5kAgIPFQIKR3ltIEZsb29yIA1GaXRuZXNzIENvYWNoZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCEQ9kFghmDxUDBTE5OjM1BTIwOjA1B0NYIFdPUlhkAgEPFgIfBQXIAjxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+QSBjbGFzcyB0aGF0IGZvY3VzZXMgb24geW91ciB0b3Jzby4gSXTigJlzIGlkZWFsIGZvciB0aWdodGVuaW5nIHlvdXIgdHVtbXkgYW5kIGJ1dHQsIHdoaWxlIGFsc28gaW1wcm92aW5nIGZ1bmN0aW9uYWwgc3RyZW5ndGggYW5kIGFzc2lzdGluZyBpbiBpbmp1cnkgcHJldmVudGlvbi4gPC9zcGFuPjwvYT5kAgIPFQIET25lIAdEZW5pY2UgZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCEg9kFghmDxUDBTIwOjAwBTIxOjAwBVp1bWJhZAIBDxYCHwUF7gI8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPkRpdGNoIHRoZSBXb3Jrb3V0IC0gSm9pbiB0aGUgUGFydHkuIExhdGluIGFuZCBpbnRlcm5hdGlvbmFsIG11c2ljIGFyZSBmdXNlZCB0byBjcmVhdGUgYW4gZXhwbG9zaXZlLCBib290eSBzaGFraW7igJkgcGFydHkgb2YgYSB3b3Jrb3V0IHRoYXQgd2lsbCB0YXJnZXQgYWxsIHRob3NlIHByb2JsZW0gYXJlYXMgYW5kIGxlYXZlIHlvdSBvbiBhIGhpZ2guPC9zcGFuPjwvYT5kAgIPFQIEVHdvIApDb2JzdGFuemEgZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCAQ9kFgRmDxUDDXRpbWV0YWJsZV93ZWQDV0VEAjA3ZAIBDxYCHwMCFBYoZg9kFghmDxUDBTA3OjAwBTA3OjQ1C0dyb3VwIEN5Y2xlZAIBDxYCHwUFlAI8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPlRoaXMgZnJlZXN0eWxlIGluZG9vciBjeWNsaW5nIGNsYXNzIHdpbGwgc3RyZW5ndGhlbiB0aGUgaGVhcnQgYW5kIGJ1cm4gZmF0IHVzaW5nIHNwZWNpYWxpc2VkIHN0YXRpb25hcnkgYmlrZXMuPC9zcGFuPjwvYT5kAgIPFQIFQ3ljbGUFS2F0eSBkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIBD2QWCGYPFQMFMDc6MDAFMDc6MjAHQ2lyY3VpdGQCAQ8WAh8FBY0DPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5BIGNyb3NzLXRyYWluaW5nIGNsYXNzIHRoYXQgaXMgaWRlYWwgZm9yIGRldmVsb3BpbmcgYWxsLXJvdW5kIGZpdG5lc3MuIFN0cmFpZ2h0Zm9yd2FyZCBhZXJvYmljIGFuZCByZXNpc3RhbmNlIGV4ZXJjaXNlcyBhcmUgcGVyZm9ybWVkIGF0IGEgc2VyaWVzIG9mIHdvcmtzdGF0aW9ucywgY3JlYXRpbmcgYSBmdW4gYW5kIGNoYWxsZW5naW5nIHdvcmtvdXQgdGhhdCBpcyBkaWZmZXJlbnQgZXZlcnkgdGltZS48L3NwYW4+PC9hPmQCAg8VAglHeW0gRmxvb3IJR3ltIFRlYW0gZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCAg9kFghmDxUDBTA3OjAwBTA3OjQ1C0JvZHkgQXR0YWNrZAIBDxYCHwUFygI8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPkJPRFlBVFRBQ0vCriBpcyBhIHJvY2tldC1mdWVsbGVkIGNvbWJpbmF0aW9uIG9mIG11c2ljIGFuZCBtb3Zlcy4gU2ltcGxlIHlldCBlZmZlY3RpdmUgY2hvcmVvZ3JhcGh5IGVuc3VyZXMgdGhhdCBwYXJ0aWNpcGFudHMgZWl0aGVyIGdldCBmaXQsIHN0YXkgZml0IG9yIGdldCBmaXR0ZXIuPC9zcGFuPjwvYT5kAgIPFQIDT25lCUtpZW4vSmF4IGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgMPZBYIZg8VAwUwNzoxNQUwNzo0NQlQdW1hIEhJSVRkAgEPFgIfBQXBAjxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+VGhlIDMwLW1pbnV0ZSBQdW1hIEhJSVQgY2xhc3MgaXMgYmFzZWQgb24gdGhlIGxhdGVzdCBIaWdoIEludGVuc2l0eSBJbnRlcnZhbCBUcmFpbmluZyBtZXRob2RzLiBCdXJuIHVwIHRvIDUwMCBjYWxvcmllcyBhbmQgZ2FpbiBtdXNjbGUgZmFzdGVyLiBHbyBmb3IgSElJVCE8L3NwYW4+PC9hPmQCAg8VAgRUd28gBlR5cm9uZWQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgQPZBYIZg8VAwUwNzo1MAUwODoyMAdDWCBXT1JYZAIBDxYCHwUFyAI8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPkEgY2xhc3MgdGhhdCBmb2N1c2VzIG9uIHlvdXIgdG9yc28uIEl04oCZcyBpZGVhbCBmb3IgdGlnaHRlbmluZyB5b3VyIHR1bW15IGFuZCBidXR0LCB3aGlsZSBhbHNvIGltcHJvdmluZyBmdW5jdGlvbmFsIHN0cmVuZ3RoIGFuZCBhc3Npc3RpbmcgaW4gaW5qdXJ5IHByZXZlbnRpb24uIDwvc3Bhbj48L2E+ZAICDxUCA09uZQhLaWVuL0pheGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgUPZBYIZg8VAwUxMjoxNQUxMzowMAlCb2R5IFB1bXBkAgEPFgIfBQWfAzxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+Qk9EWVBVTVDCriBpcyB0aGUgdWx0aW1hdGUgZW5kdXJhbmNlIHdlaWdodCB0cmFpbmluZyB3b3Jrb3V0IHRvIHRvbmluZyBldmVyeSBtYWpvciBtdXNjbGUgZ3JvdXAgaW4geW91ciBib2R5LiBTdWl0YWJsZSBmb3IgbWVuIGFuZCB3b21lbiBvZiBhbGwgbGV2ZWxzIG9mIGZpdG5lc3MsIHRoaXMgbm9uLWltcGFjdCByZXNpc3RhbmNlIHRyYWluaW5nIGNsYXNzIHVzZXMgYmFyYmVsbHMgYW5kIGVhc2lseSBhZGp1c3RhYmxlIHdlaWdodHMuPC9zcGFuPjwvYT5kAgIPFQIDT25lBkFuZHkgTWQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgYPZBYIZg8VAwUxMjoxNQUxMzowMAdQaWxhdGVzZAIBDxYCHwUF5QI8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPlRoaXMgY2xhc3MgZm9jdXNlcyBvbiBjby1vcmRpbmF0aW9uIGFuZCByZWxheGF0aW9uIHVzaW5nIHNsb3csIGZsb3dpbmcgbW92ZW1lbnRzLiBEZXZlbG9wZWQgdG8gd29yayBzcGVjaWZpY2FsbHkgb24gdHJhaW5pbmcgdGhlIGNvcmUgcG9zdHVyYWwgbXVzY2xlcyBpbXByb3ZpbmcgYm90aCBzdHJlbmd0aCBhbmQgZmxleGliaWxpdHkuPC9zcGFuPjwvYT5kAgIPFQIDVHdvBURhbW9uZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCBw9kFghmDxUDBTEyOjMwBTEzOjE1C0dyb3VwIEN5Y2xlZAIBDxYCHwUFlAI8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPlRoaXMgZnJlZXN0eWxlIGluZG9vciBjeWNsaW5nIGNsYXNzIHdpbGwgc3RyZW5ndGhlbiB0aGUgaGVhcnQgYW5kIGJ1cm4gZmF0IHVzaW5nIHNwZWNpYWxpc2VkIHN0YXRpb25hcnkgYmlrZXMuPC9zcGFuPjwvYT5kAgIPFQIFQ3ljbGUGQW5keSBXZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCCA9kFghmDxUDBTEzOjA1BTEzOjUwB0NpcmN1aXRkAgEPFgIfBQWNAzxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+QSBjcm9zcy10cmFpbmluZyBjbGFzcyB0aGF0IGlzIGlkZWFsIGZvciBkZXZlbG9waW5nIGFsbC1yb3VuZCBmaXRuZXNzLiBTdHJhaWdodGZvcndhcmQgYWVyb2JpYyBhbmQgcmVzaXN0YW5jZSBleGVyY2lzZXMgYXJlIHBlcmZvcm1lZCBhdCBhIHNlcmllcyBvZiB3b3Jrc3RhdGlvbnMsIGNyZWF0aW5nIGEgZnVuIGFuZCBjaGFsbGVuZ2luZyB3b3Jrb3V0IHRoYXQgaXMgZGlmZmVyZW50IGV2ZXJ5IHRpbWUuPC9zcGFuPjwvYT5kAgIPFQIDT25lBkFuZHkgTWQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgkPZBYIZg8VAwUxMzoxNQUxNDowMBFBbnRpIEdyYXZpdHkgWW9nYWQCAQ8WAh8FBacDPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5BIHVuaXF1ZSBmdXNpb24gdGVjaG5pcXVlLCByZXZvbHV0aW9uYXJ5IGluIHJlbGlldmluZyBjb21wcmVzc2VkIGpvaW50cyBhbmQgYWxpZ25pbmcgdGhlIGJvZHkgZnJvbSBoZWFkIHRvIHRvZS4gVGhlIEFudGlHcmF2aXR5wq4gSGFtbW9jayBhY3RzIGFzIGEgc29mdCB0cmFwZXplIGFuZCBhcyBhIHN1cHBvcnQgd2hpbGUgeW91IG1hc3RlciBzaW1wbGUgaW52ZXJzaW9ucyBhbmQgZmluYWxseSBwcm9ncmVzcyB0byBtb3JlIGFkdmFuY2VkIHBvc2VzLjwvc3Bhbj48L2E+ZAICDxUCBFR3byAGSGVsZW4gZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCCg9kFghmDxUDBTEzOjIwBTEzOjM1BlYgQ29yZWQCAQ8WAh8FBYUCPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5FZmZlY3RpdmUgZXhlcmNpc2VzIHRvIGZsYXR0ZW4sIHRvbmUsIGxlbmd0aGVuIGFuZCBzdHJlbmd0aGVuISBBYnMgb2Ygc3RlZWwsIGFyZSB5b3UgdXAgZm9yIGl0Pzwvc3Bhbj48L2E+ZAICDxUCCUd5bSBGbG9vcg1GaXRuZXNzIENvYWNoZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCCw9kFgZmDxUDBTE3OjQ1BTE4OjMwCEJvb3RjYW1wZAICDxUCBE9uZSAHSGFubmFoIGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgwPZBYIZg8VAwUxODowMAUxODo0NQdNeXJpZGUrZAIBDxYCHwUFwAI8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPlRoZSB1bHRpbWF0ZSBjaW5lbWF0aWMgaW5kb29yIGN5Y2xpbmcgZXhwZXJpZW5jZS4gQmUgY29hY2hlZCBieSB5b3VyIGluc3RydWN0b3IgYXMgeW91IHJpZGUgdGhyb3VnaCBicmVhdGggdGFraW5nIHNjZW5lcyBvZiBkaWZmZXJlbnQgcGFydHMgb2YgdGhlIHdvcmxkLiA8L3NwYW4+PC9hPmQCAg8VAgVDeWNsZQVOaWtraWQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAg0PZBYIZg8VAwUxODozMAUxOToxNQZGaWVyY2VkAgEPFgIfBQXSATxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+QSBuZXcgY2xhc3MgaW5zcGlyZWQgYnkgQWZyaWNhbiBUcmliYWwgRGFuY2U8L3NwYW4+PC9hPmQCAg8VAgRUd28gB0NhcnJpZSBkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIOD2QWCGYPFQMFMTg6MzUFMTk6MjAHQm94IEZpdGQCAQ8WAh8FBbUCPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5UcmFpbiBhcyBhIGJveGVyIHRyYWlucyB3aXRob3V0IHRoZSBzcGFycmluZywgdXNpbmcgZ2xvdmVzLCBwYWRzIGFuZCBib3hpbmcgYmFncy4gVGhpcyBjbGFzcyBpcyBhIGNoYWxsZW5naW5nIHdvcmtvdXQgc2V0IHRvIG1vdGl2YXRpbmcgbXVzaWMuIDwvc3Bhbj48L2E+ZAICDxUCBE9uZSAHSGFuYW5oIGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAg8PZBYIZg8VAwUxODo0NQUxOTowNQtLZXR0bGViZWxsc2QCAQ8WAh8FBacBPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij4tPC9zcGFuPjwvYT5kAgIPFQIJR3ltIEZsb29yDUZpdG5lc3MgQ29hY2hkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIQD2QWCGYPFQMFMTk6MDAFMTk6NDUHTXlyaWRlK2QCAQ8WAh8FBcACPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5UaGUgdWx0aW1hdGUgY2luZW1hdGljIGluZG9vciBjeWNsaW5nIGV4cGVyaWVuY2UuIEJlIGNvYWNoZWQgYnkgeW91ciBpbnN0cnVjdG9yIGFzIHlvdSByaWRlIHRocm91Z2ggYnJlYXRoIHRha2luZyBzY2VuZXMgb2YgZGlmZmVyZW50IHBhcnRzIG9mIHRoZSB3b3JsZC4gPC9zcGFuPjwvYT5kAgIPFQIFQ3ljbGUFTmlra2lkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIRD2QWCGYPFQMFMTk6MTUFMTk6MzUTQ29yZSBUZXggRmFzdCBDbGFzc2QCAQ8WAh8FBakCPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5UaGUgaG90dGVzdCBmaXRuZXNzIHRvb2wgZm9yIHJlYWN0aXZlIHRyYWluaW5nLiBDaGFsbGVuZ2UgeW91ciB3aG9sZSBib2R5IGVzcGVjaWFsbHkgeW91ciBjb3JlIHdpdGggb3VyIDIwIG1pbnV0ZSBjbGFzcyBpbiB0aGUgZ3ltLjwvc3Bhbj48L2E+ZAICDxUCCUd5bSBGbG9vcglGaXQgQ29hY2hkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAISD2QWCGYPFQMFMTk6MjUFMjA6MjUMRHluYW1pYyBZb2dhZAIBDxYCHwUF+AE8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPkEgZmFzdC1wYWNlZCBmbG93aW5nIHlvZ2Egd29ya291dCB3aGljaCBpcyBhbiBpZGVhbCBwcmVwYXJhdGlvbiBmb3IgQXNodGFuZ2EgeW9nYS48L3NwYW4+PC9hPmQCAg8VAgNUd28FVGFuaWFkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAITD2QWCGYPFQMFMTk6MjUFMjA6MTAJQm9keSBQdW1wZAIBDxYCHwUFnwM8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPkJPRFlQVU1Qwq4gaXMgdGhlIHVsdGltYXRlIGVuZHVyYW5jZSB3ZWlnaHQgdHJhaW5pbmcgd29ya291dCB0byB0b25pbmcgZXZlcnkgbWFqb3IgbXVzY2xlIGdyb3VwIGluIHlvdXIgYm9keS4gU3VpdGFibGUgZm9yIG1lbiBhbmQgd29tZW4gb2YgYWxsIGxldmVscyBvZiBmaXRuZXNzLCB0aGlzIG5vbi1pbXBhY3QgcmVzaXN0YW5jZSB0cmFpbmluZyBjbGFzcyB1c2VzIGJhcmJlbGxzIGFuZCBlYXNpbHkgYWRqdXN0YWJsZSB3ZWlnaHRzLjwvc3Bhbj48L2E+ZAICDxUCBE9uZSAHSGFubmFoIGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgIPZBYEZg8VAw10aW1ldGFibGVfdGh1A1RIVQIwOGQCAQ8WAh8DAhQWKGYPZBYGZg8VAwUwNzowMAUwNzo0NQhCb290Y2FtcGQCAg8VAgNPbmUHSGFubmFoIGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgEPZBYIZg8VAwUwNzowMAUwNzo0NQtHcm91cCBDeWNsZWQCAQ8WAh8FBZQCPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5UaGlzIGZyZWVzdHlsZSBpbmRvb3IgY3ljbGluZyBjbGFzcyB3aWxsIHN0cmVuZ3RoZW4gdGhlIGhlYXJ0IGFuZCBidXJuIGZhdCB1c2luZyBzcGVjaWFsaXNlZCBzdGF0aW9uYXJ5IGJpa2VzLjwvc3Bhbj48L2E+ZAICDxUCBUN5Y2xlBEFteSBkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAICD2QWCGYPFQMFMDc6NDUFMDg6MDUTQ29yZSBUZXggRmFzdCBDbGFzc2QCAQ8WAh8FBakCPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5UaGUgaG90dGVzdCBmaXRuZXNzIHRvb2wgZm9yIHJlYWN0aXZlIHRyYWluaW5nLiBDaGFsbGVuZ2UgeW91ciB3aG9sZSBib2R5IGVzcGVjaWFsbHkgeW91ciBjb3JlIHdpdGggb3VyIDIwIG1pbnV0ZSBjbGFzcyBpbiB0aGUgZ3ltLjwvc3Bhbj48L2E+ZAICDxUCCUd5bSBGbG9vcg1GaXRuZXNzIENvYWNoZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCAw9kFghmDxUDBTA3OjQ1BTA4OjMwB0JveCBGaXRkAgEPFgIfBQW1AjxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+VHJhaW4gYXMgYSBib3hlciB0cmFpbnMgd2l0aG91dCB0aGUgc3BhcnJpbmcsIHVzaW5nIGdsb3ZlcywgcGFkcyBhbmQgYm94aW5nIGJhZ3MuIFRoaXMgY2xhc3MgaXMgYSBjaGFsbGVuZ2luZyB3b3Jrb3V0IHNldCB0byBtb3RpdmF0aW5nIG11c2ljLiA8L3NwYW4+PC9hPmQCAg8VAgRPbmUgB0hhbm5haCBkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIED2QWCGYPFQMFMTI6MTUFMTM6MDARQW50aSBHcmF2aXR5IFlvZ2FkAgEPFgIfBQWnAzxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+QSB1bmlxdWUgZnVzaW9uIHRlY2huaXF1ZSwgcmV2b2x1dGlvbmFyeSBpbiByZWxpZXZpbmcgY29tcHJlc3NlZCBqb2ludHMgYW5kIGFsaWduaW5nIHRoZSBib2R5IGZyb20gaGVhZCB0byB0b2UuIFRoZSBBbnRpR3Jhdml0ecKuIEhhbW1vY2sgYWN0cyBhcyBhIHNvZnQgdHJhcGV6ZSBhbmQgYXMgYSBzdXBwb3J0IHdoaWxlIHlvdSBtYXN0ZXIgc2ltcGxlIGludmVyc2lvbnMgYW5kIGZpbmFsbHkgcHJvZ3Jlc3MgdG8gbW9yZSBhZHZhbmNlZCBwb3Nlcy48L3NwYW4+PC9hPmQCAg8VAgRUd28gBkhlbGVuIGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgUPZBYIZg8VAwUxMjoxNQUxMzowMAtHcm91cCBDeWNsZWQCAQ8WAh8FBZQCPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5UaGlzIGZyZWVzdHlsZSBpbmRvb3IgY3ljbGluZyBjbGFzcyB3aWxsIHN0cmVuZ3RoZW4gdGhlIGhlYXJ0IGFuZCBidXJuIGZhdCB1c2luZyBzcGVjaWFsaXNlZCBzdGF0aW9uYXJ5IGJpa2VzLjwvc3Bhbj48L2E+ZAICDxUCBUN5Y2xlCE1pY2hlbGxlZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCBg9kFghmDxUDBTEyOjE1BTEzOjAwC0JvZHkgQ29tYmF0ZAIBDxYCHwUFogM8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPkEgbm9uLWNvbnRhY3QgbWFydGlhbCBhcnRzIGZpdG5lc3Mgd29ya291dCB1c2luZyBraWNrcywgc3RyaWtlcywgYW5kIGJsb2NrcyBjaG9yZW9ncmFwaGVkIHRvIGluc3BpcmluZyBtdXNpYy4gUmVjb21tZW5kZWQgZm9yIGFueSBhZ2UgYW5kIGZpdG5lc3MgbGV2ZWwsIEJPRFlDT01CQVTCriBpcyBhbiBlbXBvd2VyaW5nIGF0aGxldGljIHdvcmtvdXQgdGhhdCB3aWxsIGhhdmUgYW55b25lIOKAmGZpZ2h0aW5nIGZpdOKAmSBpbiBubyB0aW1lLjwvc3Bhbj48L2E+ZAICDxUCBE9uZSAHQW5keSBXIGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgcPZBYIZg8VAwUxMjozMAUxMjo1MBRXYXR0IEJpa2UgRmFzdCBDbGFzc2QCAQ8WAh8FBboBPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5XYXR0IEJpa2UgRmFzdCBDbGFzczwvc3Bhbj48L2E+ZAICDxUCCUd5bSBGbG9vcg1GaXRuZXNzIENvYWNoZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCCA9kFghmDxUDBTEzOjA1BTEzOjI1A1pVVWQCAQ8WAh8FBbUBPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5UbyBiZSBDb25maXJtZWQ8L3NwYW4+PC9hPmQCAg8VAgpHeW0gRmxvb3IgCUd5bSBUZWFtIGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgkPZBYIZg8VAwUxMzowNQUxMzozNQdDaXJjdWl0ZAIBDxYCHwUFjQM8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPkEgY3Jvc3MtdHJhaW5pbmcgY2xhc3MgdGhhdCBpcyBpZGVhbCBmb3IgZGV2ZWxvcGluZyBhbGwtcm91bmQgZml0bmVzcy4gU3RyYWlnaHRmb3J3YXJkIGFlcm9iaWMgYW5kIHJlc2lzdGFuY2UgZXhlcmNpc2VzIGFyZSBwZXJmb3JtZWQgYXQgYSBzZXJpZXMgb2Ygd29ya3N0YXRpb25zLCBjcmVhdGluZyBhIGZ1biBhbmQgY2hhbGxlbmdpbmcgd29ya291dCB0aGF0IGlzIGRpZmZlcmVudCBldmVyeSB0aW1lLjwvc3Bhbj48L2E+ZAICDxUCBE9uZSAHQW5keSBXIGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgoPZBYIZg8VAwUxMzoxNQUxNDowMAdQaWxhdGVzZAIBDxYCHwUF5QI8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPlRoaXMgY2xhc3MgZm9jdXNlcyBvbiBjby1vcmRpbmF0aW9uIGFuZCByZWxheGF0aW9uIHVzaW5nIHNsb3csIGZsb3dpbmcgbW92ZW1lbnRzLiBEZXZlbG9wZWQgdG8gd29yayBzcGVjaWZpY2FsbHkgb24gdHJhaW5pbmcgdGhlIGNvcmUgcG9zdHVyYWwgbXVzY2xlcyBpbXByb3ZpbmcgYm90aCBzdHJlbmd0aCBhbmQgZmxleGliaWxpdHkuPC9zcGFuPjwvYT5kAgIPFQIEVHdvIAZIZWxlbiBkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAILD2QWCGYPFQMFMTM6MzAFMTQ6MDAHQ1ggV09SWGQCAQ8WAh8FBcgCPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5BIGNsYXNzIHRoYXQgZm9jdXNlcyBvbiB5b3VyIHRvcnNvLiBJdOKAmXMgaWRlYWwgZm9yIHRpZ2h0ZW5pbmcgeW91ciB0dW1teSBhbmQgYnV0dCwgd2hpbGUgYWxzbyBpbXByb3ZpbmcgZnVuY3Rpb25hbCBzdHJlbmd0aCBhbmQgYXNzaXN0aW5nIGluIGluanVyeSBwcmV2ZW50aW9uLiA8L3NwYW4+PC9hPmQCAg8VAgVPbmUgIAdBbmR5IE0gZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCDA9kFghmDxUDBTE3OjE1BTE3OjQ1DFR3ZW50eSBGb3VyIGQCAQ8WAh8FBeUBPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5Ud2VudHkgZm91ciBtaW51dGVzIG9mIGhpZ2ggaW50ZW5zaXR5IHRyYWluaW5nIGZvciBldmVyeSBib2R5LiA8L3NwYW4+PC9hPmQCAg8VAgNPbmUHQW5keSBXIGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAg0PZBYIZg8VAwUxNzo0NQUxODoxNQdDWCBXT1JYZAIBDxYCHwUFyAI8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPkEgY2xhc3MgdGhhdCBmb2N1c2VzIG9uIHlvdXIgdG9yc28uIEl04oCZcyBpZGVhbCBmb3IgdGlnaHRlbmluZyB5b3VyIHR1bW15IGFuZCBidXR0LCB3aGlsZSBhbHNvIGltcHJvdmluZyBmdW5jdGlvbmFsIHN0cmVuZ3RoIGFuZCBhc3Npc3RpbmcgaW4gaW5qdXJ5IHByZXZlbnRpb24uIDwvc3Bhbj48L2E+ZAICDxUCBE9uZSAFTGVpZ2hkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIOD2QWCGYPFQMFMTg6MTUFMTk6MTULR3JvdXAgQ3ljbGVkAgEPFgIfBQWUAjxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+VGhpcyBmcmVlc3R5bGUgaW5kb29yIGN5Y2xpbmcgY2xhc3Mgd2lsbCBzdHJlbmd0aGVuIHRoZSBoZWFydCBhbmQgYnVybiBmYXQgdXNpbmcgc3BlY2lhbGlzZWQgc3RhdGlvbmFyeSBiaWtlcy48L3NwYW4+PC9hPmQCAg8VAgVDeWNsZQVNaWtlIGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAg8PZBYIZg8VAwUxODoxNQUxOTowMAtCb2R5IEF0dGFja2QCAQ8WAh8FBcoCPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5CT0RZQVRUQUNLwq4gaXMgYSByb2NrZXQtZnVlbGxlZCBjb21iaW5hdGlvbiBvZiBtdXNpYyBhbmQgbW92ZXMuIFNpbXBsZSB5ZXQgZWZmZWN0aXZlIGNob3Jlb2dyYXBoeSBlbnN1cmVzIHRoYXQgcGFydGljaXBhbnRzIGVpdGhlciBnZXQgZml0LCBzdGF5IGZpdCBvciBnZXQgZml0dGVyLjwvc3Bhbj48L2E+ZAICDxUCBE9uZSAFTHVrZSBkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIQD2QWCGYPFQMFMTg6MzAFMTg6NTAKUG93ZXJwbGF0ZWQCAQ8WAh8FBesCPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5HZXQgeW91ciBib2R5IHBvc2l0aXZlbHkg4oCYYnV6emluZ+KAmSB3aXRoIHRoZSBsYXRlc3QgZml0bmVzcyBjcmF6ZTsgYW5kIGFjY2VsZXJhdGUgeW91ciByZXN1bHRzIGJleW9uZCBiZWxpZWYhIENsYXNzZXMgdmFyeSB0byBzdWl0IGEgd2lkZSByYW5nZSBvZiBnb2FscyBhbmQgYXJlIHR5cGljYWxseSAyMCBtaW51dGVzIGluIGR1cmF0aW9uLjwvc3Bhbj48L2E+ZAICDxUCCUd5bSBGbG9vcg1GaXRuZXNzIENvYWNoZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCEQ9kFghmDxUDBTE4OjMwBTE5OjE1BkZpZXJjZWQCAQ8WAh8FBdIBPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5BIG5ldyBjbGFzcyBpbnNwaXJlZCBieSBBZnJpY2FuIFRyaWJhbCBEYW5jZTwvc3Bhbj48L2E+ZAICDxUCBFR3byAHQ2FycmllIGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAhIPZBYIZg8VAwUxOTowNQUyMDowNQlCb2R5IFB1bXBkAgEPFgIfBQWfAzxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+Qk9EWVBVTVDCriBpcyB0aGUgdWx0aW1hdGUgZW5kdXJhbmNlIHdlaWdodCB0cmFpbmluZyB3b3Jrb3V0IHRvIHRvbmluZyBldmVyeSBtYWpvciBtdXNjbGUgZ3JvdXAgaW4geW91ciBib2R5LiBTdWl0YWJsZSBmb3IgbWVuIGFuZCB3b21lbiBvZiBhbGwgbGV2ZWxzIG9mIGZpdG5lc3MsIHRoaXMgbm9uLWltcGFjdCByZXNpc3RhbmNlIHRyYWluaW5nIGNsYXNzIHVzZXMgYmFyYmVsbHMgYW5kIGVhc2lseSBhZGp1c3RhYmxlIHdlaWdodHMuPC9zcGFuPjwvYT5kAgIPFQIDT25lB0xhdXJlbiBkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAITD2QWCGYPFQMFMTk6MTUFMjA6MTUHUGlsYXRlc2QCAQ8WAh8FBeUCPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5UaGlzIGNsYXNzIGZvY3VzZXMgb24gY28tb3JkaW5hdGlvbiBhbmQgcmVsYXhhdGlvbiB1c2luZyBzbG93LCBmbG93aW5nIG1vdmVtZW50cy4gRGV2ZWxvcGVkIHRvIHdvcmsgc3BlY2lmaWNhbGx5IG9uIHRyYWluaW5nIHRoZSBjb3JlIHBvc3R1cmFsIG11c2NsZXMgaW1wcm92aW5nIGJvdGggc3RyZW5ndGggYW5kIGZsZXhpYmlsaXR5Ljwvc3Bhbj48L2E+ZAICDxUCBFR3byAHRXN0aGVyIGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgMPZBYEZg8VAw10aW1ldGFibGVfZnJpA0ZSSQIwOWQCAQ8WAh8DAg0WGmYPZBYIZg8VAwUwNzowMAUwNzozMAlQdW1hIEhJSVRkAgEPFgIfBQXBAjxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+VGhlIDMwLW1pbnV0ZSBQdW1hIEhJSVQgY2xhc3MgaXMgYmFzZWQgb24gdGhlIGxhdGVzdCBIaWdoIEludGVuc2l0eSBJbnRlcnZhbCBUcmFpbmluZyBtZXRob2RzLiBCdXJuIHVwIHRvIDUwMCBjYWxvcmllcyBhbmQgZ2FpbiBtdXNjbGUgZmFzdGVyLiBHbyBmb3IgSElJVCE8L3NwYW4+PC9hPmQCAg8VAgRUd28gBkVtaWx5IGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgEPZBYIZg8VAwUwNzoxNQUwODowMAtHcm91cCBDeWNsZWQCAQ8WAh8FBZQCPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5UaGlzIGZyZWVzdHlsZSBpbmRvb3IgY3ljbGluZyBjbGFzcyB3aWxsIHN0cmVuZ3RoZW4gdGhlIGhlYXJ0IGFuZCBidXJuIGZhdCB1c2luZyBzcGVjaWFsaXNlZCBzdGF0aW9uYXJ5IGJpa2VzLjwvc3Bhbj48L2E+ZAICDxUCBUN5Y2xlBU1pa2UgZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCAg9kFghmDxUDBTA3OjE1BTA4OjAwCUJvZHkgUHVtcGQCAQ8WAh8FBZ8DPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5CT0RZUFVNUMKuIGlzIHRoZSB1bHRpbWF0ZSBlbmR1cmFuY2Ugd2VpZ2h0IHRyYWluaW5nIHdvcmtvdXQgdG8gdG9uaW5nIGV2ZXJ5IG1ham9yIG11c2NsZSBncm91cCBpbiB5b3VyIGJvZHkuIFN1aXRhYmxlIGZvciBtZW4gYW5kIHdvbWVuIG9mIGFsbCBsZXZlbHMgb2YgZml0bmVzcywgdGhpcyBub24taW1wYWN0IHJlc2lzdGFuY2UgdHJhaW5pbmcgY2xhc3MgdXNlcyBiYXJiZWxscyBhbmQgZWFzaWx5IGFkanVzdGFibGUgd2VpZ2h0cy48L3NwYW4+PC9hPmQCAg8VAgNPbmUJTWljaGVsbGUgZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCAw9kFghmDxUDBTEyOjE1BTEzOjAwDEJvZHkgQmFsYW5jZWQCAQ8WAh8FBakCPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5CT0RZQkFMQU5DRcKuIGNvbWJpbmVzIFlvZ2EsIFBpbGF0ZXMsIGFuZCBUYWkgQ2hpIGluc3BpcmVkIG1vdmVzIHdpdGggbXVzaWMgdG8gY3JlYXRlIGEgdW5pcXVlIGFuZCBpbnZpZ29yYXRpbmcgd29ya291dCBleHBlcmllbmNlLjwvc3Bhbj48L2E+ZAICDxUCBFR3byAGRGVuaXNlZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCBA9kFghmDxUDBTEyOjE1BTEzOjAwC0dyb3VwIEN5Y2xlZAIBDxYCHwUFlAI8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPlRoaXMgZnJlZXN0eWxlIGluZG9vciBjeWNsaW5nIGNsYXNzIHdpbGwgc3RyZW5ndGhlbiB0aGUgaGVhcnQgYW5kIGJ1cm4gZmF0IHVzaW5nIHNwZWNpYWxpc2VkIHN0YXRpb25hcnkgYmlrZXMuPC9zcGFuPjwvYT5kAgIPFQIFQ3ljbGUJQ2Fyb2xpbmUgZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCBQ9kFghmDxUDBTEyOjE1BTEzOjAwC1p1bWJhIFN0ZXAgZAIBDxYCHwUFsQE8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPlp1bWJhIFN0ZXAgPC9zcGFuPjwvYT5kAgIPFQIET25lIAZBcnZpbiBkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIGD2QWCGYPFQMFMTI6MzAFMTI6NTAKUG93ZXJwbGF0ZWQCAQ8WAh8FBesCPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5HZXQgeW91ciBib2R5IHBvc2l0aXZlbHkg4oCYYnV6emluZ+KAmSB3aXRoIHRoZSBsYXRlc3QgZml0bmVzcyBjcmF6ZTsgYW5kIGFjY2VsZXJhdGUgeW91ciByZXN1bHRzIGJleW9uZCBiZWxpZWYhIENsYXNzZXMgdmFyeSB0byBzdWl0IGEgd2lkZSByYW5nZSBvZiBnb2FscyBhbmQgYXJlIHR5cGljYWxseSAyMCBtaW51dGVzIGluIGR1cmF0aW9uLjwvc3Bhbj48L2E+ZAICDxUCCUd5bSBGbG9vcg1GaXRuZXNzIENvYWNoZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCBw9kFghmDxUDBTEzOjAwBTE0OjAwBFlvZ2FkAgEPFgIfBQXPBDxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+U3VpdGFibGUgZm9yIGFueSBhZ2Ugb3IgZml0bmVzcyBsZXZlbCwgWW9nYSBpcyBvbmUgb2YgdGhlIG1vc3Qgd2lkZWx5IHByYWN0aXNlZCBvZiBzcGlyaXR1YWwgZGlzY2lwbGluZXMuIFRoZSBwb3N0dXJlcyB1c2VkIGluIHlvZ2EgaGF2ZSBiZWVuIGRldmVsb3BlZCBvdmVyIHRob3VzYW5kcyBvZiB5ZWFycyBhcyBhIHN5c3RlbWF0aWMgbWVhbnMgb2YgZXhlcmNpc2luZyBldmVyeSBwYXJ0IG9mIHRoZSBib2R5LCBib3RoIGluc2lkZSBhbmQgb3V0LiBZb2dhIGNhbiBoZWxwIHRvIHByZXZlbnQgaWxsbmVzcyBieSBib29zdGluZyB0aGUgaW1tdW5lIHN5c3RlbS4gSXQgYWxzbyBlbmNvdXJhZ2VzIHJlbGF4YXRpb24gYW5kIHBvc3R1cmUgd29yayBjYW4gYWxsZXZpYXRlIGJhY2sgcGFpbiBhcyB3ZWxsIGFzIGltcHJvdmluZyBjaXJjdWxhdGlvbi48L3NwYW4+PC9hPmQCAg8VAgNUd28HSmVyZW15IGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAggPZBYIZg8VAwUxMzowNQUxMzo1MAlCb2R5IFB1bXBkAgEPFgIfBQWfAzxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+Qk9EWVBVTVDCriBpcyB0aGUgdWx0aW1hdGUgZW5kdXJhbmNlIHdlaWdodCB0cmFpbmluZyB3b3Jrb3V0IHRvIHRvbmluZyBldmVyeSBtYWpvciBtdXNjbGUgZ3JvdXAgaW4geW91ciBib2R5LiBTdWl0YWJsZSBmb3IgbWVuIGFuZCB3b21lbiBvZiBhbGwgbGV2ZWxzIG9mIGZpdG5lc3MsIHRoaXMgbm9uLWltcGFjdCByZXNpc3RhbmNlIHRyYWluaW5nIGNsYXNzIHVzZXMgYmFyYmVsbHMgYW5kIGVhc2lseSBhZGp1c3RhYmxlIHdlaWdodHMuPC9zcGFuPjwvYT5kAgIPFQIET25lIAZEZW5pc2VkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIJD2QWCGYPFQMFMTc6MzAFMTg6MDAXQW50aSBHcmF2aXR5IFlvZ2EgSW50cm9kAgEPFgIfBQXLAjxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+TmV2ZXIgZG9uZSBBbnRpIEdyYXZpdHkgWW9nYSBiZWZvcmU/IFRoaXMgc2hvcnQgdGFzdGVyIHNlc3Npb24gaXMgcGVyZmVjdCBmb3IgYmVnaW5uZXJzIHdoZXJlIHlvdeKAmWxsIGxlYXJuIHNvbWUgYmFzaWMgbW92ZXMgYW5kIGdldCBjb21mb3J0YWJsZSB1c2luZyB0aGUgaGFtbW9ja3MuPC9zcGFuPjwvYT5kAgIPFQIDVHdvBlRlc3NhIGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgoPZBYIZg8VAwUxNzo0NQUxODozMAtCb2R5IENvbWJhdGQCAQ8WAh8FBaIDPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5BIG5vbi1jb250YWN0IG1hcnRpYWwgYXJ0cyBmaXRuZXNzIHdvcmtvdXQgdXNpbmcga2lja3MsIHN0cmlrZXMsIGFuZCBibG9ja3MgY2hvcmVvZ3JhcGhlZCB0byBpbnNwaXJpbmcgbXVzaWMuIFJlY29tbWVuZGVkIGZvciBhbnkgYWdlIGFuZCBmaXRuZXNzIGxldmVsLCBCT0RZQ09NQkFUwq4gaXMgYW4gZW1wb3dlcmluZyBhdGhsZXRpYyB3b3Jrb3V0IHRoYXQgd2lsbCBoYXZlIGFueW9uZSDigJhmaWdodGluZyBmaXTigJkgaW4gbm8gdGltZS48L3NwYW4+PC9hPmQCAg8VAgRPbmUgCE5hdGFsaWEgZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCCw9kFghmDxUDBTE4OjAwBTE5OjAwEUFudGkgR3Jhdml0eSBZb2dhZAIBDxYCHwUFpwM8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPkEgdW5pcXVlIGZ1c2lvbiB0ZWNobmlxdWUsIHJldm9sdXRpb25hcnkgaW4gcmVsaWV2aW5nIGNvbXByZXNzZWQgam9pbnRzIGFuZCBhbGlnbmluZyB0aGUgYm9keSBmcm9tIGhlYWQgdG8gdG9lLiBUaGUgQW50aUdyYXZpdHnCriBIYW1tb2NrIGFjdHMgYXMgYSBzb2Z0IHRyYXBlemUgYW5kIGFzIGEgc3VwcG9ydCB3aGlsZSB5b3UgbWFzdGVyIHNpbXBsZSBpbnZlcnNpb25zIGFuZCBmaW5hbGx5IHByb2dyZXNzIHRvIG1vcmUgYWR2YW5jZWQgcG9zZXMuPC9zcGFuPjwvYT5kAgIPFQIEVHdvIAZUZXNzYSBkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIMD2QWCGYPFQMFMTg6MzUFMTk6MjAJQm9keSBQdW1wZAIBDxYCHwUFnwM8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPkJPRFlQVU1Qwq4gaXMgdGhlIHVsdGltYXRlIGVuZHVyYW5jZSB3ZWlnaHQgdHJhaW5pbmcgd29ya291dCB0byB0b25pbmcgZXZlcnkgbWFqb3IgbXVzY2xlIGdyb3VwIGluIHlvdXIgYm9keS4gU3VpdGFibGUgZm9yIG1lbiBhbmQgd29tZW4gb2YgYWxsIGxldmVscyBvZiBmaXRuZXNzLCB0aGlzIG5vbi1pbXBhY3QgcmVzaXN0YW5jZSB0cmFpbmluZyBjbGFzcyB1c2VzIGJhcmJlbGxzIGFuZCBlYXNpbHkgYWRqdXN0YWJsZSB3ZWlnaHRzLjwvc3Bhbj48L2E+ZAICDxUCBE9uZSAITmF0YWxpYSBkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIED2QWBGYPFQMNdGltZXRhYmxlX3NhdANTQVQCMTBkAgEPFgIfAwIJFhJmD2QWCGYPFQMFMTA6MTUFMTE6MTUJQm9keSBQdW1wZAIBDxYCHwUFnwM8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPkJPRFlQVU1Qwq4gaXMgdGhlIHVsdGltYXRlIGVuZHVyYW5jZSB3ZWlnaHQgdHJhaW5pbmcgd29ya291dCB0byB0b25pbmcgZXZlcnkgbWFqb3IgbXVzY2xlIGdyb3VwIGluIHlvdXIgYm9keS4gU3VpdGFibGUgZm9yIG1lbiBhbmQgd29tZW4gb2YgYWxsIGxldmVscyBvZiBmaXRuZXNzLCB0aGlzIG5vbi1pbXBhY3QgcmVzaXN0YW5jZSB0cmFpbmluZyBjbGFzcyB1c2VzIGJhcmJlbGxzIGFuZCBlYXNpbHkgYWRqdXN0YWJsZSB3ZWlnaHRzLjwvc3Bhbj48L2E+ZAICDxUCA09uZQdBbnRvaW5lZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCAQ9kFghmDxUDBTEwOjE1BTEwOjQ1F0FudGkgR3Jhdml0eSBZb2dhIEludHJvZAIBDxYCHwUFywI8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPk5ldmVyIGRvbmUgQW50aSBHcmF2aXR5IFlvZ2EgYmVmb3JlPyBUaGlzIHNob3J0IHRhc3RlciBzZXNzaW9uIGlzIHBlcmZlY3QgZm9yIGJlZ2lubmVycyB3aGVyZSB5b3XigJlsbCBsZWFybiBzb21lIGJhc2ljIG1vdmVzIGFuZCBnZXQgY29tZm9ydGFibGUgdXNpbmcgdGhlIGhhbW1vY2tzLjwvc3Bhbj48L2E+ZAICDxUCA1R3bwZFc3RoZXJkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAICD2QWCGYPFQMFMTA6MTUFMTE6MDALR3JvdXAgQ3ljbGVkAgEPFgIfBQWUAjxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+VGhpcyBmcmVlc3R5bGUgaW5kb29yIGN5Y2xpbmcgY2xhc3Mgd2lsbCBzdHJlbmd0aGVuIHRoZSBoZWFydCBhbmQgYnVybiBmYXQgdXNpbmcgc3BlY2lhbGlzZWQgc3RhdGlvbmFyeSBiaWtlcy48L3NwYW4+PC9hPmQCAg8VAgVDeWNsZQNBbXlkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIDD2QWCGYPFQMFMTA6NDUFMTE6NDURQW50aSBHcmF2aXR5IFlvZ2FkAgEPFgIfBQWnAzxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+QSB1bmlxdWUgZnVzaW9uIHRlY2huaXF1ZSwgcmV2b2x1dGlvbmFyeSBpbiByZWxpZXZpbmcgY29tcHJlc3NlZCBqb2ludHMgYW5kIGFsaWduaW5nIHRoZSBib2R5IGZyb20gaGVhZCB0byB0b2UuIFRoZSBBbnRpR3Jhdml0ecKuIEhhbW1vY2sgYWN0cyBhcyBhIHNvZnQgdHJhcGV6ZSBhbmQgYXMgYSBzdXBwb3J0IHdoaWxlIHlvdSBtYXN0ZXIgc2ltcGxlIGludmVyc2lvbnMgYW5kIGZpbmFsbHkgcHJvZ3Jlc3MgdG8gbW9yZSBhZHZhbmNlZCBwb3Nlcy48L3NwYW4+PC9hPmQCAg8VAgNUd28GRXN0aGVyZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCBA9kFghmDxUDBTExOjA1BTExOjI1B0NpcmN1aXRkAgEPFgIfBQWNAzxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+QSBjcm9zcy10cmFpbmluZyBjbGFzcyB0aGF0IGlzIGlkZWFsIGZvciBkZXZlbG9waW5nIGFsbC1yb3VuZCBmaXRuZXNzLiBTdHJhaWdodGZvcndhcmQgYWVyb2JpYyBhbmQgcmVzaXN0YW5jZSBleGVyY2lzZXMgYXJlIHBlcmZvcm1lZCBhdCBhIHNlcmllcyBvZiB3b3Jrc3RhdGlvbnMsIGNyZWF0aW5nIGEgZnVuIGFuZCBjaGFsbGVuZ2luZyB3b3Jrb3V0IHRoYXQgaXMgZGlmZmVyZW50IGV2ZXJ5IHRpbWUuPC9zcGFuPjwvYT5kAgIPFQIJR3ltIEZsb29yDUZpdG5lc3MgQ29hY2hkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIFD2QWCGYPFQMFMTE6MjAFMTI6MDULQm9keSBBdHRhY2tkAgEPFgIfBQXKAjxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+Qk9EWUFUVEFDS8KuIGlzIGEgcm9ja2V0LWZ1ZWxsZWQgY29tYmluYXRpb24gb2YgbXVzaWMgYW5kIG1vdmVzLiBTaW1wbGUgeWV0IGVmZmVjdGl2ZSBjaG9yZW9ncmFwaHkgZW5zdXJlcyB0aGF0IHBhcnRpY2lwYW50cyBlaXRoZXIgZ2V0IGZpdCwgc3RheSBmaXQgb3IgZ2V0IGZpdHRlci48L3NwYW4+PC9hPmQCAg8VAgNPbmUHQW50b2luZWQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgYPZBYIZg8VAwUxMTo1MAUxMjo1MBFBbnRpIEdyYXZpdHkgWW9nYWQCAQ8WAh8FBacDPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5BIHVuaXF1ZSBmdXNpb24gdGVjaG5pcXVlLCByZXZvbHV0aW9uYXJ5IGluIHJlbGlldmluZyBjb21wcmVzc2VkIGpvaW50cyBhbmQgYWxpZ25pbmcgdGhlIGJvZHkgZnJvbSBoZWFkIHRvIHRvZS4gVGhlIEFudGlHcmF2aXR5wq4gSGFtbW9jayBhY3RzIGFzIGEgc29mdCB0cmFwZXplIGFuZCBhcyBhIHN1cHBvcnQgd2hpbGUgeW91IG1hc3RlciBzaW1wbGUgaW52ZXJzaW9ucyBhbmQgZmluYWxseSBwcm9ncmVzcyB0byBtb3JlIGFkdmFuY2VkIHBvc2VzLjwvc3Bhbj48L2E+ZAICDxUCA1R3bwZFc3RoZXJkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIHD2QWCGYPFQMFMTI6MDUFMTI6MzUHQ1ggV09SWGQCAQ8WAh8FBcgCPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5BIGNsYXNzIHRoYXQgZm9jdXNlcyBvbiB5b3VyIHRvcnNvLiBJdOKAmXMgaWRlYWwgZm9yIHRpZ2h0ZW5pbmcgeW91ciB0dW1teSBhbmQgYnV0dCwgd2hpbGUgYWxzbyBpbXByb3ZpbmcgZnVuY3Rpb25hbCBzdHJlbmd0aCBhbmQgYXNzaXN0aW5nIGluIGluanVyeSBwcmV2ZW50aW9uLiA8L3NwYW4+PC9hPmQCAg8VAgNPbmUHQW50b2luZWQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAggPZBYIZg8VAwUxMzowMAUxMzo0NQdQaWxhdGVzZAIBDxYCHwUF5QI8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPlRoaXMgY2xhc3MgZm9jdXNlcyBvbiBjby1vcmRpbmF0aW9uIGFuZCByZWxheGF0aW9uIHVzaW5nIHNsb3csIGZsb3dpbmcgbW92ZW1lbnRzLiBEZXZlbG9wZWQgdG8gd29yayBzcGVjaWZpY2FsbHkgb24gdHJhaW5pbmcgdGhlIGNvcmUgcG9zdHVyYWwgbXVzY2xlcyBpbXByb3ZpbmcgYm90aCBzdHJlbmd0aCBhbmQgZmxleGliaWxpdHkuPC9zcGFuPjwvYT5kAgIPFQIDVHdvBkVzdGhlcmQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgUPZBYEZg8VAw10aW1ldGFibGVfc3VuA1NVTgIxMWQCAQ8WAh8DAgMWBmYPZBYIZg8VAwUxMDoxNQUxMTowMAtCb2R5IENvbWJhdGQCAQ8WAh8FBaIDPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5BIG5vbi1jb250YWN0IG1hcnRpYWwgYXJ0cyBmaXRuZXNzIHdvcmtvdXQgdXNpbmcga2lja3MsIHN0cmlrZXMsIGFuZCBibG9ja3MgY2hvcmVvZ3JhcGhlZCB0byBpbnNwaXJpbmcgbXVzaWMuIFJlY29tbWVuZGVkIGZvciBhbnkgYWdlIGFuZCBmaXRuZXNzIGxldmVsLCBCT0RZQ09NQkFUwq4gaXMgYW4gZW1wb3dlcmluZyBhdGhsZXRpYyB3b3Jrb3V0IHRoYXQgd2lsbCBoYXZlIGFueW9uZSDigJhmaWdodGluZyBmaXTigJkgaW4gbm8gdGltZS48L3NwYW4+PC9hPmQCAg8VAgNPbmUEQXNoIGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgEPZBYIZg8VAwUxMTowNQUxMjowNQlCb2R5IFB1bXBkAgEPFgIfBQWfAzxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+Qk9EWVBVTVDCriBpcyB0aGUgdWx0aW1hdGUgZW5kdXJhbmNlIHdlaWdodCB0cmFpbmluZyB3b3Jrb3V0IHRvIHRvbmluZyBldmVyeSBtYWpvciBtdXNjbGUgZ3JvdXAgaW4geW91ciBib2R5LiBTdWl0YWJsZSBmb3IgbWVuIGFuZCB3b21lbiBvZiBhbGwgbGV2ZWxzIG9mIGZpdG5lc3MsIHRoaXMgbm9uLWltcGFjdCByZXNpc3RhbmNlIHRyYWluaW5nIGNsYXNzIHVzZXMgYmFyYmVsbHMgYW5kIGVhc2lseSBhZGp1c3RhYmxlIHdlaWdodHMuPC9zcGFuPjwvYT5kAgIPFQIDT25lBEFzaCBkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAICD2QWCGYPFQMFMTI6MTAFMTM6MTAMQm9keSBCYWxhbmNlZAIBDxYCHwUFqQI8YSBjbGFzcz0iY2xhc3N0aXAiPjxpbWcgc3JjPSIvYXNzZXRzL2ltYWdlcy9tYWluc2l0ZS9jbGFzc2ljL2luZm8tY2xhc3NpYy5wbmciIGFsdD0iTW9yZSBpbmZvcm1hdGlvbiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiAvPjxzcGFuIGNsYXNzPSJjbGFzc0luZm9Cb3giPkJPRFlCQUxBTkNFwq4gY29tYmluZXMgWW9nYSwgUGlsYXRlcywgYW5kIFRhaSBDaGkgaW5zcGlyZWQgbW92ZXMgd2l0aCBtdXNpYyB0byBjcmVhdGUgYSB1bmlxdWUgYW5kIGludmlnb3JhdGluZyB3b3Jrb3V0IGV4cGVyaWVuY2UuPC9zcGFuPjwvYT5kAgIPFQIET25lIARBc2ggZAIDDxYCHwUFJDxzcGFuIGNsYXNzPSJjb2x1bW4tY2VudHJlIj4tPC9zcGFuPmQCBg9kFgRmDxUDDXRpbWV0YWJsZV9tb24DTU9OAjEyZAIBDxYCHwMCBhYMZg9kFghmDxUDBTExOjAwBTEyOjAwCUJvZHkgUHVtcGQCAQ8WAh8FBZ8DPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5CT0RZUFVNUMKuIGlzIHRoZSB1bHRpbWF0ZSBlbmR1cmFuY2Ugd2VpZ2h0IHRyYWluaW5nIHdvcmtvdXQgdG8gdG9uaW5nIGV2ZXJ5IG1ham9yIG11c2NsZSBncm91cCBpbiB5b3VyIGJvZHkuIFN1aXRhYmxlIGZvciBtZW4gYW5kIHdvbWVuIG9mIGFsbCBsZXZlbHMgb2YgZml0bmVzcywgdGhpcyBub24taW1wYWN0IHJlc2lzdGFuY2UgdHJhaW5pbmcgY2xhc3MgdXNlcyBiYXJiZWxscyBhbmQgZWFzaWx5IGFkanVzdGFibGUgd2VpZ2h0cy48L3NwYW4+PC9hPmQCAg8VAgNPbmUEQXNoIGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgEPZBYIZg8VAwUxMjowNQUxMzowNQtCb2R5IENvbWJhdGQCAQ8WAh8FBaIDPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5BIG5vbi1jb250YWN0IG1hcnRpYWwgYXJ0cyBmaXRuZXNzIHdvcmtvdXQgdXNpbmcga2lja3MsIHN0cmlrZXMsIGFuZCBibG9ja3MgY2hvcmVvZ3JhcGhlZCB0byBpbnNwaXJpbmcgbXVzaWMuIFJlY29tbWVuZGVkIGZvciBhbnkgYWdlIGFuZCBmaXRuZXNzIGxldmVsLCBCT0RZQ09NQkFUwq4gaXMgYW4gZW1wb3dlcmluZyBhdGhsZXRpYyB3b3Jrb3V0IHRoYXQgd2lsbCBoYXZlIGFueW9uZSDigJhmaWdodGluZyBmaXTigJkgaW4gbm8gdGltZS48L3NwYW4+PC9hPmQCAg8VAgNPbmUEQXNoIGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgIPZBYIZg8VAwUxMjo0MAUxMzowMA9WaVBSIEZhc3QgQ2xhc3NkAgEPFgIfBQWWAzxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+T25jZSB5b3XigJl2ZSBsZWFybmVkIHRoZSBiYXNpY3Mgb2YgVmlQUiBpbiBhIEhvdyBUbywgY29tZSBhbG9uZyB0byBhIEZhc3QgQ2xhc3MgdG8gcHV0IHlvdXIgbW92ZXMgdG9nZXRoZXIgYW5kIGJ1aWxkIHVwIGEgcmVhbCBzd2VhdCEgRXhwZWN0IHRvbmluZywgY2FyZGlvdmFzY3VsYXIgYW5kIGZsZXhpYmlsaXR5IGJlbmVmaXRzIGFsbCBpbiBvbmUgdmVyeSBlZmZlY3RpdmUgYW5kIGVmZmljaWVudCB3b3Jrb3V0IQoKPC9zcGFuPjwvYT5kAgIPFQIKR3ltIEZsb29yIA5GaXRuZXNzIENvYWNoIGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgMPZBYIZg8VAwUxMzoxMAUxNDoxMAxCb2R5IEJhbGFuY2VkAgEPFgIfBQWpAjxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+Qk9EWUJBTEFOQ0XCriBjb21iaW5lcyBZb2dhLCBQaWxhdGVzLCBhbmQgVGFpIENoaSBpbnNwaXJlZCBtb3ZlcyB3aXRoIG11c2ljIHRvIGNyZWF0ZSBhIHVuaXF1ZSBhbmQgaW52aWdvcmF0aW5nIHdvcmtvdXQgZXhwZXJpZW5jZS48L3NwYW4+PC9hPmQCAg8VAgRPbmUgBEFzaCBkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIED2QWCGYPFQMFMTQ6MTUFMTU6MDARQW50aSBHcmF2aXR5IFlvZ2FkAgEPFgIfBQWnAzxhIGNsYXNzPSJjbGFzc3RpcCI+PGltZyBzcmM9Ii9hc3NldHMvaW1hZ2VzL21haW5zaXRlL2NsYXNzaWMvaW5mby1jbGFzc2ljLnBuZyIgYWx0PSJNb3JlIGluZm9ybWF0aW9uIiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiIC8+PHNwYW4gY2xhc3M9ImNsYXNzSW5mb0JveCI+QSB1bmlxdWUgZnVzaW9uIHRlY2huaXF1ZSwgcmV2b2x1dGlvbmFyeSBpbiByZWxpZXZpbmcgY29tcHJlc3NlZCBqb2ludHMgYW5kIGFsaWduaW5nIHRoZSBib2R5IGZyb20gaGVhZCB0byB0b2UuIFRoZSBBbnRpR3Jhdml0ecKuIEhhbW1vY2sgYWN0cyBhcyBhIHNvZnQgdHJhcGV6ZSBhbmQgYXMgYSBzdXBwb3J0IHdoaWxlIHlvdSBtYXN0ZXIgc2ltcGxlIGludmVyc2lvbnMgYW5kIGZpbmFsbHkgcHJvZ3Jlc3MgdG8gbW9yZSBhZHZhbmNlZCBwb3Nlcy48L3NwYW4+PC9hPmQCAg8VAgRUd28gB0VzdGhlciBkAgMPFgIfBQUkPHNwYW4gY2xhc3M9ImNvbHVtbi1jZW50cmUiPi08L3NwYW4+ZAIFD2QWCGYPFQMFMTU6MDUFMTY6MDUHUGlsYXRlc2QCAQ8WAh8FBeUCPGEgY2xhc3M9ImNsYXNzdGlwIj48aW1nIHNyYz0iL2Fzc2V0cy9pbWFnZXMvbWFpbnNpdGUvY2xhc3NpYy9pbmZvLWNsYXNzaWMucG5nIiBhbHQ9Ik1vcmUgaW5mb3JtYXRpb24iIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgLz48c3BhbiBjbGFzcz0iY2xhc3NJbmZvQm94Ij5UaGlzIGNsYXNzIGZvY3VzZXMgb24gY28tb3JkaW5hdGlvbiBhbmQgcmVsYXhhdGlvbiB1c2luZyBzbG93LCBmbG93aW5nIG1vdmVtZW50cy4gRGV2ZWxvcGVkIHRvIHdvcmsgc3BlY2lmaWNhbGx5IG9uIHRyYWluaW5nIHRoZSBjb3JlIHBvc3R1cmFsIG11c2NsZXMgaW1wcm92aW5nIGJvdGggc3RyZW5ndGggYW5kIGZsZXhpYmlsaXR5Ljwvc3Bhbj48L2E+ZAICDxUCBFR3byAHRXN0aGVyIGQCAw8WAh8FBSQ8c3BhbiBjbGFzcz0iY29sdW1uLWNlbnRyZSI+LTwvc3Bhbj5kAgQPZBYEAgEPFgIfBQUsU29ycnksIG91ciBjbGFzcyB0aW1ldGFibGUgaXMgbm90IGF2YWlsYWJsZS5kAgMPFgIfBQVeUGxlYXNlIGNhbGwgdGhlIGNsdWIgb24gPHNwYW4+MDIwNyA3MTAgNjE2MDwvc3Bhbj4gdG8gZmluZCBvdXQgbW9yZSBhYm91dCBvdXIgY2xhc3MgdGltZXRhYmxlLmQCBQ9kFgJmD2QWBGYPFgIfBQVOT1BFTklORyBIT1VSUzogTW9uLVRodXJzIDZhbSB0byAxMC4zMHBtLCAKRnJpIDZhbS0xMHBtLCAKU2F0ICYgU3VuIDEwYW0gLSA2cG0uZAIBDxQrAAIPFgQfAmcfAwICZGQWAmYPZBYEAgEPZBYCZg8VAwAcL21pY3Jvc2l0ZXMvYWxkZXJzZ2F0ZS90ZXJtcyUyMDAgQWxkZXJzZ2F0ZSBUZXJtcyAmYW1wOyBDb25kaXRpb25zZAICD2QWAmYPFQMDIC8gHi9taWNyb3NpdGVzL2FsZGVyc2dhdGUvcHJpdmFjeR0yMDAgQWxkZXJzZ2F0ZSBQcml2YWN5IFBvbGljeWQYAwUkY29udGFpbmVyXzAkY3RsMDQkTmF2aWdhdGlvbkxpc3RWaWV3DxQrAA5kZGRkZGRkFCsAAmRkAgJkZGRmAv////8PZAUpY29udGFpbmVyXzAkY29udGVudF8wJFNlY29uZExldmVsRWxlbWVudHMPZ2QFJGNvbnRhaW5lcl8wJGN0bDAzJE5hdmlnYXRpb25MaXN0Vmlldw8UKwAOZGRkZGRkZDwrAAYAAgZkZGRmAv////8PZNLuOHGBC+HI8N5zKg8E6u6Cfs/O" />
+</div>
+
+        
+<div id="cookie-ribbon">
+	<section class="container">
+	    <div>
+            <p>We use cookies on this site so you have the best browsing experience possible and so we understand how you use our site.<br /> To allow us to do this just continue to use the site as normal &ndash; we&rsquo;ll take that as your consent. You can find out more about <br /> the cookies we use,&nbsp;tell us not
+to use them or control the way we use them by visiting our cookies setting page.</p>
+	    </div>
+	    <!--<a class="btn disable-cookies" href="#">Leave cookies off</a>-->
+        
+        <a class="cookie_options_btn" href="/legals/cookie-settings.aspx">Set Cookie Options</a>
+        <a class="btn" href="?">Close</a>
+	</section>
+</div>
+           
+
+        <div class="site_container">
+            
+<div id="page-content">
+    
+<div class="header">
+                <h1 id="logo"><a href="/microsites/aldersgate" class="ir" style="background-image:url('/~/media/Images/Microsites/Aldersgate/va-classic-logo-aldersgate.ashx')">Virgin Active Classic <br />Health Club <br />200 Aldersgate</a></h1>
+                <div id="nav-wrap">
+                                <div class="nav">
+                                 <ul>
+                                    
+                                           
+                                                
+                            <li>
+                                <a href="http://www.virginactive.co.uk/microsites/aldersgate" id="container_0_ctl03_NavigationListView_btnAnchor_0">
+                                    HOME
+                                </a>
+                            </li>
+                                                        
+                        
+                            <li>
+                                <a href="/microsites/aldersgate/membership" id="container_0_ctl03_NavigationListView_btnAnchor_1">
+                                    MEMBERSHIP
+                                </a>
+                            </li>
+                                                        
+                        
+                            <li>
+                                <a href="/microsites/aldersgate/whats-new" id="container_0_ctl03_NavigationListView_btnAnchor_2">
+                                    WHAT&#39;S NEW
+                                </a>
+                            </li>
+                                                        
+                        
+                            <li>
+                                <a href="/microsites/aldersgate/location" id="container_0_ctl03_NavigationListView_btnAnchor_3">
+                                    LOCATION
+                                </a>
+                            </li>
+                                                        
+                        
+                            <li>
+                                <a href="/microsites/aldersgate/timetable" id="container_0_ctl03_NavigationListView_btnAnchor_4" class="active">
+                                    TIMETABLE
+                                </a>
+                            </li>
+                                                        
+                        
+                            <li>
+                                <a href="/microsites/aldersgate/interested" id="container_0_ctl03_NavigationListView_btnAnchor_5">
+                                    INTERESTED?
+                                </a>
+                            </li>
+                                                        
+                        
+                                           
+                                        
+                                        <li>
+                                <a  href="/member-portal/login" target="_self">
+                                                                            MEMBER LOGIN
+                                </a>
+                            </li>
+                                         </ul>
+                                </div>
+
+                        </div>
+        </div>
+            
+    
+<div id="content" class="allow_overflow clearfix">
+                 <section class="single-article allow_overflow section clearfix">   
+                         <h1>Fitness Classes</h1>
+                     <p>When it comes to group classes, we have everything from Antigravity Yoga to Zumba.</p>
+                                            
+                        
+            <div id="primary-l" class="timetable-wrap">
+                          
+                                      <div class="item-row clearfix">
+                                              <p class="week"><strong>Tuesday 6th May</strong> to <strong>Monday 12th May</strong></p>
+                                              <ul id="container_0_content_0_lstIcons" class="icon-list">
+                                                      <li><a href="#" class="icon-print">Print</a></li>
+                                              </ul>
+                                      </div> 
+                    
+
+                    
+                    <div class="item-row day_selector clearfix">
+                    	<p>Show:</p>
+                    	<ul id="select_day">
+                        	<li><a href="#timetable_week" class="active">Week</a></li>
+                        	<li><a href='#timetable_tue' class='show_tue' rel='tue'>Tue</a></li><li><a href='#timetable_wed' class='show_wed' rel='tue'>Wed</a></li><li><a href='#timetable_thu' class='show_thu' rel='tue'>Thu</a></li><li><a href='#timetable_fri' class='show_fri' rel='tue'>Fri</a></li><li><a href='#timetable_sat' class='show_sat' rel='tue'>Sat</a></li><li><a href='#timetable_sun' class='show_sun' rel='tue'>Sun</a></li><li><a href='#timetable_mon' class='show_mon' rel='tue'>Mon</a></li>
+                        </ul>
+                    </div>
+                    
+                    
+            <div id="timetable_tue" class="timetable clearfix">
+                <p class="calendar">
+                    <span class="day">TUE</span>
+                    <span class="date">27</span>
+                </p>
+                <table>
+                    <tr>
+                        <th scope="col" class="start">Start</th>
+                        <th scope="col" class="end">End</th>
+                        <th scope="col" class="name">Class Name</th>
+                        <th scope="col" class="studio">Studio</th>
+                        <th scope="col" class="instructor">Instructor</th>
+                        <th scope="col" class="booking ">Booking</th>
+                    </tr>
+                    
+                            <tr>
+                                <td>07:00</td>
+                                <td>07:45</td>
+                                <td class="classdetails"><span class="classname">Body Pump</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYPUMP® is the ultimate endurance weight training workout to toning every major muscle group in your body. Suitable for men and women of all levels of fitness, this non-impact resistance training class uses barbells and easily adjustable weights.</span></a></td>
+                                <td>One</td>
+                                <td>Antoine</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>07:00</td>
+                                <td>07:45</td>
+                                <td class="classdetails"><span class="classname">Group Cycle</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">This freestyle indoor cycling class will strengthen the heart and burn fat using specialised stationary bikes.</span></a></td>
+                                <td>Cycle</td>
+                                <td>Kaz </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>07:45</td>
+                                <td>08:15</td>
+                                <td class="classdetails"><span class="classname">CX WORX</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A class that focuses on your torso. It’s ideal for tightening your tummy and butt, while also improving functional strength and assisting in injury prevention. </span></a></td>
+                                <td>One</td>
+                                <td>Antoine</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:00</td>
+                                <td>12:30</td>
+                                <td class="classdetails"><span class="classname">Twenty Four </span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">Twenty four minutes of high intensity training for every body. </span></a></td>
+                                <td>One</td>
+                                <td>Andy W </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:15</td>
+                                <td>13:00</td>
+                                <td class="classdetails"><span class="classname">Group Cycle</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">This freestyle indoor cycling class will strengthen the heart and burn fat using specialised stationary bikes.</span></a></td>
+                                <td>Cycle</td>
+                                <td>Amy </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:30</td>
+                                <td>13:15</td>
+                                <td class="classdetails"><span class="classname">Body Attack</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYATTACK® is a rocket-fuelled combination of music and moves. Simple yet effective choreography ensures that participants either get fit, stay fit or get fitter.</span></a></td>
+                                <td>One</td>
+                                <td>Denice</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:40</td>
+                                <td>13:00</td>
+                                <td class="classdetails"><span class="classname">Kettlebells</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">-</span></a></td>
+                                <td>Gym Floor</td>
+                                <td>Fitness coach </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>13:05</td>
+                                <td>13:20</td>
+                                <td class="classdetails"><span class="classname">V Core</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">Effective exercises to flatten, tone, lengthen and strengthen! Abs of steel, are you up for it?</span></a></td>
+                                <td>Gym Floor </td>
+                                <td>Fitness Coach </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>13:05</td>
+                                <td>13:50</td>
+                                <td class="classdetails"><span class="classname">Zumba Step </span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">Zumba Step </span></a></td>
+                                <td>Two </td>
+                                <td>Amy </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>13:20</td>
+                                <td>14:00</td>
+                                <td class="classdetails"><span class="classname">Body Pump</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYPUMP® is the ultimate endurance weight training workout to toning every major muscle group in your body. Suitable for men and women of all levels of fitness, this non-impact resistance training class uses barbells and easily adjustable weights.</span></a></td>
+                                <td>One</td>
+                                <td>Denice</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>14:15</td>
+                                <td>15:00</td>
+                                <td class="classdetails"><span class="classname">Anti Gravity Yoga</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A unique fusion technique, revolutionary in relieving compressed joints and aligning the body from head to toe. The AntiGravity® Hammock acts as a soft trapeze and as a support while you master simple inversions and finally progress to more advanced poses.</span></a></td>
+                                <td>Two</td>
+                                <td>Esther </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>17:45</td>
+                                <td>18:30</td>
+                                <td class="classdetails"><span class="classname">Anti Gravity Yoga</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A unique fusion technique, revolutionary in relieving compressed joints and aligning the body from head to toe. The AntiGravity® Hammock acts as a soft trapeze and as a support while you master simple inversions and finally progress to more advanced poses.</span></a></td>
+                                <td>Two</td>
+                                <td>Helen </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>17:45</td>
+                                <td>18:30</td>
+                                <td class="classdetails"><span class="classname">Body Combat</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A non-contact martial arts fitness workout using kicks, strikes, and blocks choreographed to inspiring music. Recommended for any age and fitness level, BODYCOMBAT® is an empowering athletic workout that will have anyone ‘fighting fit’ in no time.</span></a></td>
+                                <td>One</td>
+                                <td>Malcom </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>18:15</td>
+                                <td>19:00</td>
+                                <td class="classdetails"><span class="classname">Group Cycle</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">This freestyle indoor cycling class will strengthen the heart and burn fat using specialised stationary bikes.</span></a></td>
+                                <td>Cycle </td>
+                                <td>Sandy </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>18:35</td>
+                                <td>19:35</td>
+                                <td class="classdetails"><span class="classname">Body Pump</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYPUMP® is the ultimate endurance weight training workout to toning every major muscle group in your body. Suitable for men and women of all levels of fitness, this non-impact resistance training class uses barbells and easily adjustable weights.</span></a></td>
+                                <td>One</td>
+                                <td>Natalia</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>18:45</td>
+                                <td>19:30</td>
+                                <td class="classdetails"><span class="classname">Body Balance</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYBALANCE® combines Yoga, Pilates, and Tai Chi inspired moves with music to create a unique and invigorating workout experience.</span></a></td>
+                                <td>Two </td>
+                                <td>Denice </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>19:00</td>
+                                <td>19:20</td>
+                                <td class="classdetails"><span class="classname">Circuit</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A cross-training class that is ideal for developing all-round fitness. Straightforward aerobic and resistance exercises are performed at a series of workstations, creating a fun and challenging workout that is different every time.</span></a></td>
+                                <td>Gym Floor </td>
+                                <td>Fitness Coach</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>19:35</td>
+                                <td>20:05</td>
+                                <td class="classdetails"><span class="classname">CX WORX</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A class that focuses on your torso. It’s ideal for tightening your tummy and butt, while also improving functional strength and assisting in injury prevention. </span></a></td>
+                                <td>One </td>
+                                <td>Denice </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>20:00</td>
+                                <td>21:00</td>
+                                <td class="classdetails"><span class="classname">Zumba</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">Ditch the Workout - Join the Party. Latin and international music are fused to create an explosive, booty shakin’ party of a workout that will target all those problem areas and leave you on a high.</span></a></td>
+                                <td>Two </td>
+                                <td>Cobstanza </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                </table>
+            </div>
+        
+            <div id="timetable_wed" class="timetable clearfix">
+                <p class="calendar">
+                    <span class="day">WED</span>
+                    <span class="date">28</span>
+                </p>
+                <table>
+                    <tr>
+                        <th scope="col" class="start">Start</th>
+                        <th scope="col" class="end">End</th>
+                        <th scope="col" class="name">Class Name</th>
+                        <th scope="col" class="studio">Studio</th>
+                        <th scope="col" class="instructor">Instructor</th>
+                        <th scope="col" class="booking ">Booking</th>
+                    </tr>
+                    
+                            <tr>
+                                <td>07:00</td>
+                                <td>07:45</td>
+                                <td class="classdetails"><span class="classname">Group Cycle</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">This freestyle indoor cycling class will strengthen the heart and burn fat using specialised stationary bikes.</span></a></td>
+                                <td>Cycle</td>
+                                <td>Katy </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>07:00</td>
+                                <td>07:20</td>
+                                <td class="classdetails"><span class="classname">Circuit</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A cross-training class that is ideal for developing all-round fitness. Straightforward aerobic and resistance exercises are performed at a series of workstations, creating a fun and challenging workout that is different every time.</span></a></td>
+                                <td>Gym Floor</td>
+                                <td>Gym Team </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>07:00</td>
+                                <td>07:45</td>
+                                <td class="classdetails"><span class="classname">Body Attack</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYATTACK® is a rocket-fuelled combination of music and moves. Simple yet effective choreography ensures that participants either get fit, stay fit or get fitter.</span></a></td>
+                                <td>One</td>
+                                <td>Kien/Jax </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>07:15</td>
+                                <td>07:45</td>
+                                <td class="classdetails"><span class="classname">Puma HIIT</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">The 30-minute Puma HIIT class is based on the latest High Intensity Interval Training methods. Burn up to 500 calories and gain muscle faster. Go for HIIT!</span></a></td>
+                                <td>Two </td>
+                                <td>Tyrone</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>07:50</td>
+                                <td>08:20</td>
+                                <td class="classdetails"><span class="classname">CX WORX</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A class that focuses on your torso. It’s ideal for tightening your tummy and butt, while also improving functional strength and assisting in injury prevention. </span></a></td>
+                                <td>One</td>
+                                <td>Kien/Jax</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:15</td>
+                                <td>13:00</td>
+                                <td class="classdetails"><span class="classname">Body Pump</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYPUMP® is the ultimate endurance weight training workout to toning every major muscle group in your body. Suitable for men and women of all levels of fitness, this non-impact resistance training class uses barbells and easily adjustable weights.</span></a></td>
+                                <td>One</td>
+                                <td>Andy M</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:15</td>
+                                <td>13:00</td>
+                                <td class="classdetails"><span class="classname">Pilates</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">This class focuses on co-ordination and relaxation using slow, flowing movements. Developed to work specifically on training the core postural muscles improving both strength and flexibility.</span></a></td>
+                                <td>Two</td>
+                                <td>Damon</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:30</td>
+                                <td>13:15</td>
+                                <td class="classdetails"><span class="classname">Group Cycle</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">This freestyle indoor cycling class will strengthen the heart and burn fat using specialised stationary bikes.</span></a></td>
+                                <td>Cycle</td>
+                                <td>Andy W</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>13:05</td>
+                                <td>13:50</td>
+                                <td class="classdetails"><span class="classname">Circuit</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A cross-training class that is ideal for developing all-round fitness. Straightforward aerobic and resistance exercises are performed at a series of workstations, creating a fun and challenging workout that is different every time.</span></a></td>
+                                <td>One</td>
+                                <td>Andy M</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>13:15</td>
+                                <td>14:00</td>
+                                <td class="classdetails"><span class="classname">Anti Gravity Yoga</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A unique fusion technique, revolutionary in relieving compressed joints and aligning the body from head to toe. The AntiGravity® Hammock acts as a soft trapeze and as a support while you master simple inversions and finally progress to more advanced poses.</span></a></td>
+                                <td>Two </td>
+                                <td>Helen </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>13:20</td>
+                                <td>13:35</td>
+                                <td class="classdetails"><span class="classname">V Core</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">Effective exercises to flatten, tone, lengthen and strengthen! Abs of steel, are you up for it?</span></a></td>
+                                <td>Gym Floor</td>
+                                <td>Fitness Coach</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>17:45</td>
+                                <td>18:30</td>
+                                <td class="classdetails"><span class="classname">Bootcamp</span></td>
+                                <td>One </td>
+                                <td>Hannah </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>18:00</td>
+                                <td>18:45</td>
+                                <td class="classdetails"><span class="classname">Myride+</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">The ultimate cinematic indoor cycling experience. Be coached by your instructor as you ride through breath taking scenes of different parts of the world. </span></a></td>
+                                <td>Cycle</td>
+                                <td>Nikki</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>18:30</td>
+                                <td>19:15</td>
+                                <td class="classdetails"><span class="classname">Fierce</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A new class inspired by African Tribal Dance</span></a></td>
+                                <td>Two </td>
+                                <td>Carrie </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>18:35</td>
+                                <td>19:20</td>
+                                <td class="classdetails"><span class="classname">Box Fit</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">Train as a boxer trains without the sparring, using gloves, pads and boxing bags. This class is a challenging workout set to motivating music. </span></a></td>
+                                <td>One </td>
+                                <td>Hananh </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>18:45</td>
+                                <td>19:05</td>
+                                <td class="classdetails"><span class="classname">Kettlebells</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">-</span></a></td>
+                                <td>Gym Floor</td>
+                                <td>Fitness Coach</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>19:00</td>
+                                <td>19:45</td>
+                                <td class="classdetails"><span class="classname">Myride+</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">The ultimate cinematic indoor cycling experience. Be coached by your instructor as you ride through breath taking scenes of different parts of the world. </span></a></td>
+                                <td>Cycle</td>
+                                <td>Nikki</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>19:15</td>
+                                <td>19:35</td>
+                                <td class="classdetails"><span class="classname">Core Tex Fast Class</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">The hottest fitness tool for reactive training. Challenge your whole body especially your core with our 20 minute class in the gym.</span></a></td>
+                                <td>Gym Floor</td>
+                                <td>Fit Coach</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>19:25</td>
+                                <td>20:25</td>
+                                <td class="classdetails"><span class="classname">Dynamic Yoga</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A fast-paced flowing yoga workout which is an ideal preparation for Ashtanga yoga.</span></a></td>
+                                <td>Two</td>
+                                <td>Tania</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>19:25</td>
+                                <td>20:10</td>
+                                <td class="classdetails"><span class="classname">Body Pump</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYPUMP® is the ultimate endurance weight training workout to toning every major muscle group in your body. Suitable for men and women of all levels of fitness, this non-impact resistance training class uses barbells and easily adjustable weights.</span></a></td>
+                                <td>One </td>
+                                <td>Hannah </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                </table>
+            </div>
+        
+            <div id="timetable_thu" class="timetable clearfix">
+                <p class="calendar">
+                    <span class="day">THU</span>
+                    <span class="date">29</span>
+                </p>
+                <table>
+                    <tr>
+                        <th scope="col" class="start">Start</th>
+                        <th scope="col" class="end">End</th>
+                        <th scope="col" class="name">Class Name</th>
+                        <th scope="col" class="studio">Studio</th>
+                        <th scope="col" class="instructor">Instructor</th>
+                        <th scope="col" class="booking ">Booking</th>
+                    </tr>
+                    
+                            <tr>
+                                <td>07:00</td>
+                                <td>07:45</td>
+                                <td class="classdetails"><span class="classname">Bootcamp</span></td>
+                                <td>One</td>
+                                <td>Hannah </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>07:00</td>
+                                <td>07:45</td>
+                                <td class="classdetails"><span class="classname">Group Cycle</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">This freestyle indoor cycling class will strengthen the heart and burn fat using specialised stationary bikes.</span></a></td>
+                                <td>Cycle</td>
+                                <td>Amy </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>07:45</td>
+                                <td>08:05</td>
+                                <td class="classdetails"><span class="classname">Core Tex Fast Class</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">The hottest fitness tool for reactive training. Challenge your whole body especially your core with our 20 minute class in the gym.</span></a></td>
+                                <td>Gym Floor</td>
+                                <td>Fitness Coach</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>07:45</td>
+                                <td>08:30</td>
+                                <td class="classdetails"><span class="classname">Box Fit</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">Train as a boxer trains without the sparring, using gloves, pads and boxing bags. This class is a challenging workout set to motivating music. </span></a></td>
+                                <td>One </td>
+                                <td>Hannah </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:15</td>
+                                <td>13:00</td>
+                                <td class="classdetails"><span class="classname">Anti Gravity Yoga</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A unique fusion technique, revolutionary in relieving compressed joints and aligning the body from head to toe. The AntiGravity® Hammock acts as a soft trapeze and as a support while you master simple inversions and finally progress to more advanced poses.</span></a></td>
+                                <td>Two </td>
+                                <td>Helen </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:15</td>
+                                <td>13:00</td>
+                                <td class="classdetails"><span class="classname">Group Cycle</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">This freestyle indoor cycling class will strengthen the heart and burn fat using specialised stationary bikes.</span></a></td>
+                                <td>Cycle</td>
+                                <td>Michelle</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:15</td>
+                                <td>13:00</td>
+                                <td class="classdetails"><span class="classname">Body Combat</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A non-contact martial arts fitness workout using kicks, strikes, and blocks choreographed to inspiring music. Recommended for any age and fitness level, BODYCOMBAT® is an empowering athletic workout that will have anyone ‘fighting fit’ in no time.</span></a></td>
+                                <td>One </td>
+                                <td>Andy W </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:30</td>
+                                <td>12:50</td>
+                                <td class="classdetails"><span class="classname">Watt Bike Fast Class</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">Watt Bike Fast Class</span></a></td>
+                                <td>Gym Floor</td>
+                                <td>Fitness Coach</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>13:05</td>
+                                <td>13:25</td>
+                                <td class="classdetails"><span class="classname">ZUU</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">To be Confirmed</span></a></td>
+                                <td>Gym Floor </td>
+                                <td>Gym Team </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>13:05</td>
+                                <td>13:35</td>
+                                <td class="classdetails"><span class="classname">Circuit</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A cross-training class that is ideal for developing all-round fitness. Straightforward aerobic and resistance exercises are performed at a series of workstations, creating a fun and challenging workout that is different every time.</span></a></td>
+                                <td>One </td>
+                                <td>Andy W </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>13:15</td>
+                                <td>14:00</td>
+                                <td class="classdetails"><span class="classname">Pilates</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">This class focuses on co-ordination and relaxation using slow, flowing movements. Developed to work specifically on training the core postural muscles improving both strength and flexibility.</span></a></td>
+                                <td>Two </td>
+                                <td>Helen </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>13:30</td>
+                                <td>14:00</td>
+                                <td class="classdetails"><span class="classname">CX WORX</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A class that focuses on your torso. It’s ideal for tightening your tummy and butt, while also improving functional strength and assisting in injury prevention. </span></a></td>
+                                <td>One  </td>
+                                <td>Andy M </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>17:15</td>
+                                <td>17:45</td>
+                                <td class="classdetails"><span class="classname">Twenty Four </span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">Twenty four minutes of high intensity training for every body. </span></a></td>
+                                <td>One</td>
+                                <td>Andy W </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>17:45</td>
+                                <td>18:15</td>
+                                <td class="classdetails"><span class="classname">CX WORX</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A class that focuses on your torso. It’s ideal for tightening your tummy and butt, while also improving functional strength and assisting in injury prevention. </span></a></td>
+                                <td>One </td>
+                                <td>Leigh</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>18:15</td>
+                                <td>19:15</td>
+                                <td class="classdetails"><span class="classname">Group Cycle</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">This freestyle indoor cycling class will strengthen the heart and burn fat using specialised stationary bikes.</span></a></td>
+                                <td>Cycle</td>
+                                <td>Mike </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>18:15</td>
+                                <td>19:00</td>
+                                <td class="classdetails"><span class="classname">Body Attack</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYATTACK® is a rocket-fuelled combination of music and moves. Simple yet effective choreography ensures that participants either get fit, stay fit or get fitter.</span></a></td>
+                                <td>One </td>
+                                <td>Luke </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>18:30</td>
+                                <td>18:50</td>
+                                <td class="classdetails"><span class="classname">Powerplate</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">Get your body positively ‘buzzing’ with the latest fitness craze; and accelerate your results beyond belief! Classes vary to suit a wide range of goals and are typically 20 minutes in duration.</span></a></td>
+                                <td>Gym Floor</td>
+                                <td>Fitness Coach</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>18:30</td>
+                                <td>19:15</td>
+                                <td class="classdetails"><span class="classname">Fierce</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A new class inspired by African Tribal Dance</span></a></td>
+                                <td>Two </td>
+                                <td>Carrie </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>19:05</td>
+                                <td>20:05</td>
+                                <td class="classdetails"><span class="classname">Body Pump</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYPUMP® is the ultimate endurance weight training workout to toning every major muscle group in your body. Suitable for men and women of all levels of fitness, this non-impact resistance training class uses barbells and easily adjustable weights.</span></a></td>
+                                <td>One</td>
+                                <td>Lauren </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>19:15</td>
+                                <td>20:15</td>
+                                <td class="classdetails"><span class="classname">Pilates</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">This class focuses on co-ordination and relaxation using slow, flowing movements. Developed to work specifically on training the core postural muscles improving both strength and flexibility.</span></a></td>
+                                <td>Two </td>
+                                <td>Esther </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                </table>
+            </div>
+        
+            <div id="timetable_fri" class="timetable clearfix">
+                <p class="calendar">
+                    <span class="day">FRI</span>
+                    <span class="date">30</span>
+                </p>
+                <table>
+                    <tr>
+                        <th scope="col" class="start">Start</th>
+                        <th scope="col" class="end">End</th>
+                        <th scope="col" class="name">Class Name</th>
+                        <th scope="col" class="studio">Studio</th>
+                        <th scope="col" class="instructor">Instructor</th>
+                        <th scope="col" class="booking ">Booking</th>
+                    </tr>
+                    
+                            <tr>
+                                <td>07:00</td>
+                                <td>07:30</td>
+                                <td class="classdetails"><span class="classname">Puma HIIT</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">The 30-minute Puma HIIT class is based on the latest High Intensity Interval Training methods. Burn up to 500 calories and gain muscle faster. Go for HIIT!</span></a></td>
+                                <td>Two </td>
+                                <td>Emily </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>07:15</td>
+                                <td>08:00</td>
+                                <td class="classdetails"><span class="classname">Group Cycle</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">This freestyle indoor cycling class will strengthen the heart and burn fat using specialised stationary bikes.</span></a></td>
+                                <td>Cycle</td>
+                                <td>Mike </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>07:15</td>
+                                <td>08:00</td>
+                                <td class="classdetails"><span class="classname">Body Pump</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYPUMP® is the ultimate endurance weight training workout to toning every major muscle group in your body. Suitable for men and women of all levels of fitness, this non-impact resistance training class uses barbells and easily adjustable weights.</span></a></td>
+                                <td>One</td>
+                                <td>Michelle </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:15</td>
+                                <td>13:00</td>
+                                <td class="classdetails"><span class="classname">Body Balance</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYBALANCE® combines Yoga, Pilates, and Tai Chi inspired moves with music to create a unique and invigorating workout experience.</span></a></td>
+                                <td>Two </td>
+                                <td>Denise</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:15</td>
+                                <td>13:00</td>
+                                <td class="classdetails"><span class="classname">Group Cycle</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">This freestyle indoor cycling class will strengthen the heart and burn fat using specialised stationary bikes.</span></a></td>
+                                <td>Cycle</td>
+                                <td>Caroline </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:15</td>
+                                <td>13:00</td>
+                                <td class="classdetails"><span class="classname">Zumba Step </span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">Zumba Step </span></a></td>
+                                <td>One </td>
+                                <td>Arvin </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:30</td>
+                                <td>12:50</td>
+                                <td class="classdetails"><span class="classname">Powerplate</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">Get your body positively ‘buzzing’ with the latest fitness craze; and accelerate your results beyond belief! Classes vary to suit a wide range of goals and are typically 20 minutes in duration.</span></a></td>
+                                <td>Gym Floor</td>
+                                <td>Fitness Coach</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>13:00</td>
+                                <td>14:00</td>
+                                <td class="classdetails"><span class="classname">Yoga</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">Suitable for any age or fitness level, Yoga is one of the most widely practised of spiritual disciplines. The postures used in yoga have been developed over thousands of years as a systematic means of exercising every part of the body, both inside and out. Yoga can help to prevent illness by boosting the immune system. It also encourages relaxation and posture work can alleviate back pain as well as improving circulation.</span></a></td>
+                                <td>Two</td>
+                                <td>Jeremy </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>13:05</td>
+                                <td>13:50</td>
+                                <td class="classdetails"><span class="classname">Body Pump</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYPUMP® is the ultimate endurance weight training workout to toning every major muscle group in your body. Suitable for men and women of all levels of fitness, this non-impact resistance training class uses barbells and easily adjustable weights.</span></a></td>
+                                <td>One </td>
+                                <td>Denise</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>17:30</td>
+                                <td>18:00</td>
+                                <td class="classdetails"><span class="classname">Anti Gravity Yoga Intro</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">Never done Anti Gravity Yoga before? This short taster session is perfect for beginners where you’ll learn some basic moves and get comfortable using the hammocks.</span></a></td>
+                                <td>Two</td>
+                                <td>Tessa </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>17:45</td>
+                                <td>18:30</td>
+                                <td class="classdetails"><span class="classname">Body Combat</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A non-contact martial arts fitness workout using kicks, strikes, and blocks choreographed to inspiring music. Recommended for any age and fitness level, BODYCOMBAT® is an empowering athletic workout that will have anyone ‘fighting fit’ in no time.</span></a></td>
+                                <td>One </td>
+                                <td>Natalia </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>18:00</td>
+                                <td>19:00</td>
+                                <td class="classdetails"><span class="classname">Anti Gravity Yoga</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A unique fusion technique, revolutionary in relieving compressed joints and aligning the body from head to toe. The AntiGravity® Hammock acts as a soft trapeze and as a support while you master simple inversions and finally progress to more advanced poses.</span></a></td>
+                                <td>Two </td>
+                                <td>Tessa </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>18:35</td>
+                                <td>19:20</td>
+                                <td class="classdetails"><span class="classname">Body Pump</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYPUMP® is the ultimate endurance weight training workout to toning every major muscle group in your body. Suitable for men and women of all levels of fitness, this non-impact resistance training class uses barbells and easily adjustable weights.</span></a></td>
+                                <td>One </td>
+                                <td>Natalia </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                </table>
+            </div>
+        
+            <div id="timetable_sat" class="timetable clearfix">
+                <p class="calendar">
+                    <span class="day">SAT</span>
+                    <span class="date">31</span>
+                </p>
+                <table>
+                    <tr>
+                        <th scope="col" class="start">Start</th>
+                        <th scope="col" class="end">End</th>
+                        <th scope="col" class="name">Class Name</th>
+                        <th scope="col" class="studio">Studio</th>
+                        <th scope="col" class="instructor">Instructor</th>
+                        <th scope="col" class="booking ">Booking</th>
+                    </tr>
+                    
+                            <tr>
+                                <td>10:15</td>
+                                <td>11:15</td>
+                                <td class="classdetails"><span class="classname">Body Pump</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYPUMP® is the ultimate endurance weight training workout to toning every major muscle group in your body. Suitable for men and women of all levels of fitness, this non-impact resistance training class uses barbells and easily adjustable weights.</span></a></td>
+                                <td>One</td>
+                                <td>Antoine</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>10:15</td>
+                                <td>10:45</td>
+                                <td class="classdetails"><span class="classname">Anti Gravity Yoga Intro</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">Never done Anti Gravity Yoga before? This short taster session is perfect for beginners where you’ll learn some basic moves and get comfortable using the hammocks.</span></a></td>
+                                <td>Two</td>
+                                <td>Esther</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>10:15</td>
+                                <td>11:00</td>
+                                <td class="classdetails"><span class="classname">Group Cycle</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">This freestyle indoor cycling class will strengthen the heart and burn fat using specialised stationary bikes.</span></a></td>
+                                <td>Cycle</td>
+                                <td>Amy</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>10:45</td>
+                                <td>11:45</td>
+                                <td class="classdetails"><span class="classname">Anti Gravity Yoga</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A unique fusion technique, revolutionary in relieving compressed joints and aligning the body from head to toe. The AntiGravity® Hammock acts as a soft trapeze and as a support while you master simple inversions and finally progress to more advanced poses.</span></a></td>
+                                <td>Two</td>
+                                <td>Esther</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>11:05</td>
+                                <td>11:25</td>
+                                <td class="classdetails"><span class="classname">Circuit</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A cross-training class that is ideal for developing all-round fitness. Straightforward aerobic and resistance exercises are performed at a series of workstations, creating a fun and challenging workout that is different every time.</span></a></td>
+                                <td>Gym Floor</td>
+                                <td>Fitness Coach</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>11:20</td>
+                                <td>12:05</td>
+                                <td class="classdetails"><span class="classname">Body Attack</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYATTACK® is a rocket-fuelled combination of music and moves. Simple yet effective choreography ensures that participants either get fit, stay fit or get fitter.</span></a></td>
+                                <td>One</td>
+                                <td>Antoine</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>11:50</td>
+                                <td>12:50</td>
+                                <td class="classdetails"><span class="classname">Anti Gravity Yoga</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A unique fusion technique, revolutionary in relieving compressed joints and aligning the body from head to toe. The AntiGravity® Hammock acts as a soft trapeze and as a support while you master simple inversions and finally progress to more advanced poses.</span></a></td>
+                                <td>Two</td>
+                                <td>Esther</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:05</td>
+                                <td>12:35</td>
+                                <td class="classdetails"><span class="classname">CX WORX</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A class that focuses on your torso. It’s ideal for tightening your tummy and butt, while also improving functional strength and assisting in injury prevention. </span></a></td>
+                                <td>One</td>
+                                <td>Antoine</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>13:00</td>
+                                <td>13:45</td>
+                                <td class="classdetails"><span class="classname">Pilates</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">This class focuses on co-ordination and relaxation using slow, flowing movements. Developed to work specifically on training the core postural muscles improving both strength and flexibility.</span></a></td>
+                                <td>Two</td>
+                                <td>Esther</td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                </table>
+            </div>
+        
+            <div id="timetable_sun" class="timetable clearfix">
+                <p class="calendar">
+                    <span class="day">SUN</span>
+                    <span class="date">01</span>
+                </p>
+                <table>
+                    <tr>
+                        <th scope="col" class="start">Start</th>
+                        <th scope="col" class="end">End</th>
+                        <th scope="col" class="name">Class Name</th>
+                        <th scope="col" class="studio">Studio</th>
+                        <th scope="col" class="instructor">Instructor</th>
+                        <th scope="col" class="booking ">Booking</th>
+                    </tr>
+                    
+                            <tr>
+                                <td>10:15</td>
+                                <td>11:00</td>
+                                <td class="classdetails"><span class="classname">Body Combat</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A non-contact martial arts fitness workout using kicks, strikes, and blocks choreographed to inspiring music. Recommended for any age and fitness level, BODYCOMBAT® is an empowering athletic workout that will have anyone ‘fighting fit’ in no time.</span></a></td>
+                                <td>One</td>
+                                <td>Ash </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>11:05</td>
+                                <td>12:05</td>
+                                <td class="classdetails"><span class="classname">Body Pump</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYPUMP® is the ultimate endurance weight training workout to toning every major muscle group in your body. Suitable for men and women of all levels of fitness, this non-impact resistance training class uses barbells and easily adjustable weights.</span></a></td>
+                                <td>One</td>
+                                <td>Ash </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:10</td>
+                                <td>13:10</td>
+                                <td class="classdetails"><span class="classname">Body Balance</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYBALANCE® combines Yoga, Pilates, and Tai Chi inspired moves with music to create a unique and invigorating workout experience.</span></a></td>
+                                <td>One </td>
+                                <td>Ash </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                </table>
+            </div>
+        
+            <div id="timetable_mon" class="timetable clearfix">
+                <p class="calendar">
+                    <span class="day">MON</span>
+                    <span class="date">02</span>
+                </p>
+                <table>
+                    <tr>
+                        <th scope="col" class="start">Start</th>
+                        <th scope="col" class="end">End</th>
+                        <th scope="col" class="name">Class Name</th>
+                        <th scope="col" class="studio">Studio</th>
+                        <th scope="col" class="instructor">Instructor</th>
+                        <th scope="col" class="booking ">Booking</th>
+                    </tr>
+                    
+                            <tr>
+                                <td>11:00</td>
+                                <td>12:00</td>
+                                <td class="classdetails"><span class="classname">Body Pump</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYPUMP® is the ultimate endurance weight training workout to toning every major muscle group in your body. Suitable for men and women of all levels of fitness, this non-impact resistance training class uses barbells and easily adjustable weights.</span></a></td>
+                                <td>One</td>
+                                <td>Ash </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:05</td>
+                                <td>13:05</td>
+                                <td class="classdetails"><span class="classname">Body Combat</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A non-contact martial arts fitness workout using kicks, strikes, and blocks choreographed to inspiring music. Recommended for any age and fitness level, BODYCOMBAT® is an empowering athletic workout that will have anyone ‘fighting fit’ in no time.</span></a></td>
+                                <td>One</td>
+                                <td>Ash </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:40</td>
+                                <td>13:00</td>
+                                <td class="classdetails"><span class="classname">ViPR Fast Class</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">Once you’ve learned the basics of ViPR in a How To, come along to a Fast Class to put your moves together and build up a real sweat! Expect toning, cardiovascular and flexibility benefits all in one very effective and efficient workout!
+
+</span></a></td>
+                                <td>Gym Floor </td>
+                                <td>Fitness Coach </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>13:10</td>
+                                <td>14:10</td>
+                                <td class="classdetails"><span class="classname">Body Balance</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">BODYBALANCE® combines Yoga, Pilates, and Tai Chi inspired moves with music to create a unique and invigorating workout experience.</span></a></td>
+                                <td>One </td>
+                                <td>Ash </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>14:15</td>
+                                <td>15:00</td>
+                                <td class="classdetails"><span class="classname">Anti Gravity Yoga</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">A unique fusion technique, revolutionary in relieving compressed joints and aligning the body from head to toe. The AntiGravity® Hammock acts as a soft trapeze and as a support while you master simple inversions and finally progress to more advanced poses.</span></a></td>
+                                <td>Two </td>
+                                <td>Esther </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>15:05</td>
+                                <td>16:05</td>
+                                <td class="classdetails"><span class="classname">Pilates</span><a class="classtip"><img src="/assets/images/mainsite/classic/info-classic.png" alt="More information" height="16" width="16" /><span class="classInfoBox">This class focuses on co-ordination and relaxation using slow, flowing movements. Developed to work specifically on training the core postural muscles improving both strength and flexibility.</span></a></td>
+                                <td>Two </td>
+                                <td>Esther </td>
+                                <td class=""><span class="column-centre">-</span></td>
+                            </tr>
+                        
+                </table>
+            </div>
+        
+
+                    
+            </div>                         
+        </section>
+         </div>
+
+    
+    
+<div class="footer">
+<a class="main-site" href="http://www.virginactive.co.uk/">Main Site</a>
+		<p class="copyright">© 2014 Virgin Active </p>
+    <p class="opening_hours">OPENING HOURS: Mon-Thurs 6am to 10.30pm, 
+Fri 6am-10pm, 
+Sat & Sun 10am - 6pm.</p>
+		<ul id="footer-links">
+		    
+				    
+                    
+                    <li>
+                        <a href="/microsites/aldersgate/terms">
+                            200 Aldersgate Terms &amp; Conditions
+                        </a>
+                    </li>
+                
+                     / 
+                    <li>
+                        <a href="/microsites/aldersgate/privacy">
+                            200 Aldersgate Privacy Policy
+                        </a>
+                    </li>
+                
+				
+            <li id="twitter"><a href="https://twitter.com/VirginActiveUK" target="_blank"><img src="/assets/images/microsites/icon-twitter.png" alt="Follow us on Twitter" /></a></li>
+		</ul>
+	</div>
+</div>
+        </div>
+           
+    </form>
+    
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+    <script>window.jQuery || document.write("<script src='/assets/scripts/jquery-1.7.1.min.js'>\x3C/script>"); </script>
+    
+    <script src='/assets/scripts/microsites/supersized.3.2.6.js' type='text/javascript'></script>
+    <script src='/assets/scripts/microsites/plugins.js' type='text/javascript'></script>
+    <script src='/assets/scripts/microsites/jquery-ui.min.js'  type='text/javascript'></script>
+    <script src='/assets/scripts/microsites/jquery.mCustomScrollbar.js'  type='text/javascript'></script>
+    <script src='/assets/scripts/microsites/jquery.mousewheel.min.js'  type='text/javascript'></script>
+    <script src='/assets/scripts/microsites/jquery.easing.1.3.js'  type='text/javascript'></script>
+    <script src='/assets/scripts/shared/form_validation.js' type='text/javascript'></script>
+    <script src='/assets/scripts/microsites/script.js' type='text/javascript'></script>
+    <script src='//d3c3cq33003psk.cloudfront.net/opentag-32825-963740.js' async defer></script>   
+    <script>
+        addLoadEvent(function () {
+            function are_cookies_enabled() {
+                var cookieEnabled = (navigator.cookieEnabled) ? true : false;
+
+                if (typeof navigator.cookieEnabled == "undefined" && !cookieEnabled) {
+                    document.cookie = "testcookie";
+                    cookieEnabled = (document.cookie.indexOf("testcookie") != -1) ? true : false;
+                }
+                return (cookieEnabled);
+            }
+
+            if (!are_cookies_enabled()) {
+                $('#cookie-ribbon,#hdnCookieShowing').hide();
+                $('body').removeClass('cookie-show');
+            }
+        });
+    </script>
+</body>
+</html>
